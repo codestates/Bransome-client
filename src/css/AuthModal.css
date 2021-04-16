@@ -1,12 +1,13 @@
 .modal_login_btn {
-  font-weight: bold;
-  font-size: 1.5rem;
-  padding: 5px 25px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  padding: 6px 20px;
   border-radius: 5px;
   cursor: pointer;
-  color: white;
+  color: var(--main-btn-color);
   border: none;
-  background-color: var(--main-btn-color);
+  background-color: transparent;
+  border: 1px solid var(--main-btn-color);
 }
 
 .modal_container {

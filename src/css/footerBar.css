@@ -7,6 +7,38 @@
   font-size: 1.3em;
   background-color: var(--main-body-color);
 }
+@media (min-width: 1128px) {
+  #footer_container {
+    padding-left: 80px !important;
+    padding-right: 80px !important;
+  }
+}
+@media (min-width: 950px) {
+  #footer_container {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
+}
+
+@media (min-width: 744px) {
+  #footer_container {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
+}
+
+@media (min-width: 375px) {
+  #footer_container {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
+}
+
+#footer_container {
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+  margin: 0 auto !important;
+}
 
 .footer_text_area {
   margin-left: 1%;
@@ -14,11 +46,13 @@
   color: white;
 }
 .footer_text1 {
-  font-size: 1.7rem;
+  font-size: 1rem;
+  font-weight: bolder;
+  color: #8b949e;
 }
-.footer_text1 {
-}
-.footer_text1 {
+.footer_text2 {
+  font-size: 0.8rem;
+  color: #8b949e;
 }
 .footer_btn_box {
   display: flex;
@@ -36,6 +70,7 @@
 .github_btn,
 .google_btn,
 .apple_btn {
-  width: 50px;
-  height: 50px;
+  width: 20px;
+  height: 20px;
+  filter: grayscale(100%);
 }

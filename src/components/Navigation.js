@@ -8,12 +8,24 @@ import AuthModal from "./AuthModal";
 
 const Navigation = () => {
   const [open, setOpen] = useState(false);
+  const [navbar_box, setNavbar_box] = useState(false);
   const manageState = () => {
     setOpen((show) => !show);
   };
 
+  const changeBackground = () => {
+    //console.log(window.scrollY);
+    if (window.scrollY >= 150) {
+      setNavbar_box(true);
+    } else {
+      setNavbar_box(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeBackground);
+
   return (
-    <nav className="navbar_box">
+    <nav className={navbar_box ? "navbar_box active" : "navbar_box"}>
       <div className="navbar_container">
         <Link to="/" className="navbar_logo">
           <img id="logos" src={MainLogo} />
