@@ -38,3 +38,9 @@
     width: 60%;
   }
 }
+
+@media all and (max-width: 400px) {
+  .search {
+    width: 90%;
+  }
+}
