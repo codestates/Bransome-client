@@ -170,4 +170,43 @@
   .introduce_right {
     display: none;
   }
+  .introduce_left > button {
+    width: 80%;
+
+    margin: auto;
+    transition: ease-out 1s;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .introduce_container {
+    display: inherit;
+    width: 100%;
+    border-radius: 0;
+    height: 100%;
+  }
+
+  .introduce_left {
+    padding: 10%;
+    display: flex;
+  }
+  .introduce_left > h1 {
+    font-size: 2rem;
+    color: black;
+  }
+  .introduce_left > p {
+    font-size: 0.8rem;
+    color: black;
+
+    font-weight: bold;
+  }
+  .introduce_right {
+    display: none;
+  }
+  .introduce_left > button {
+    width: 90%;
+
+    margin: auto;
+    transition: ease-out 1s;
+  }
 }
