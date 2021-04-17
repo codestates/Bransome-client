@@ -1,11 +1,11 @@
 .search {
-  margin-top: 10%;
+  margin-top: 2%;
   display: flex;
   position: relative;
   border-radius: 20px;
   border: 3px solid var(--main-btn-color);
   background: white;
-  width: 90%;
+  width: 50%;
 }
 
 .search_bar {
@@ -14,7 +14,7 @@
   border: none;
   border-radius: 20px;
   outline: none;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   padding: 10px;
 }
 .search:hover {
@@ -31,4 +31,26 @@
 
 .search_icon {
   font-size: 25px;
+}
+
+@media all and (max-width: 900px) {
+  .search {
+    width: 60%;
+    margin-bottom: 200px;
+  }
+}
+/* 400이하에서 적용 */
+@media all and (max-width: 400px) {
+  .search {
+    width: 70%;
+    margin-bottom: 200px;
+  }
+  /* 인풋창 높이 조절 */
+  .search_bar {
+    height: 0%;
+    margin: auto;
+  }
+  .search_icon {
+    font-size: 20px;
+  }
 }
