@@ -1,4 +1,6 @@
+import brandData from "../../Pages/DummyData/brandsLogo";
 const initialState = {
+  brands: brandData,
   brandSearh: [],
 
   value: "",

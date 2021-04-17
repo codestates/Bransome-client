@@ -16,10 +16,15 @@ import pepsi from "../../logos/brandLogo-big/drink/pepsi.jpg";
 import redbull from "../../logos/brandLogo-big/drink/redbull.png";
 import starbucks from "../../logos/brandLogo-big/drink/starbucks.png";
 import twosome from "../../logos/brandLogo-big/drink/twosome.jpg";
-
+/*
+IT/미디어: 1~50
+자동차: 51~100
+커피 및 음료 : 101~200
+*/
 const brands = [
   //IT/Midea
   {
+    _id: 1,
     brand_id: 1,
     brand_name: "Apple",
     brand_main_image: apple,
@@ -28,6 +33,7 @@ const brands = [
     urls: "/1111",
   },
   {
+    _id: 2,
     brand_id: 2,
     brand_name: "Microsoft",
     brand_main_image: microsoft,
@@ -36,20 +42,25 @@ const brands = [
     urls: "/1112",
   },
   {
+    _id: 3,
     brand_id: 3,
     brand_name: "Intel",
     brand_main_image: intel,
     brand_sub_image: "",
     category: "IT&미디어",
+    urls: "/1113",
   },
   {
+    _id: 4,
     brand_id: 4,
     brand_name: "AMD",
     brand_main_image: AMD,
     brand_sub_image: "",
     category: "IT&미디어",
+    urls: "/1114",
   },
   {
+    _id: 5,
     brand_id: 5,
     brand_name: "Nvidia",
     brand_main_image: Nvidia,
@@ -57,6 +68,7 @@ const brands = [
     category: "IT&미디어",
   },
   {
+    _id: 6,
     brand_id: 6,
     brand_name: "Dell",
     brand_main_image: Dell,
@@ -64,6 +76,7 @@ const brands = [
     category: "IT&미디어",
   },
   {
+    _id: 7,
     brand_id: 7,
     brand_name: "HP",
     brand_main_image: HP,
@@ -71,6 +84,7 @@ const brands = [
     category: "IT&미디어",
   },
   {
+    _id: 8,
     brand_id: 8,
     brand_name: "Lenovo",
     brand_main_image: Lenovo,
@@ -78,6 +92,7 @@ const brands = [
     category: "IT&미디어",
   },
   {
+    _id: 9,
     brand_id: 9,
     brand_name: "Samsung",
     brand_main_image: Samsung,
@@ -85,6 +100,7 @@ const brands = [
     category: "IT&미디어",
   },
   {
+    _id: 10,
     brand_id: 10,
     brand_name: "LG",
     brand_main_image: LG,
@@ -93,6 +109,7 @@ const brands = [
   },
   //커피, 음료
   {
+    _id: 51,
     brand_id: 11,
     brand_name: "Idiya_Coffee",
     brand_main_image: idiya,
@@ -100,6 +117,7 @@ const brands = [
     category: "커피&음료",
   },
   {
+    _id: 52,
     brand_id: 12,
     brand_name: "StarBucks",
     brand_main_image: starbucks,
@@ -107,6 +125,7 @@ const brands = [
     category: "커피&음료",
   },
   {
+    _id: 53,
     brand_id: 13,
     brand_name: "AToSomePlace",
     brand_main_image: twosome,
@@ -114,6 +133,7 @@ const brands = [
     category: "커피&음료",
   },
   {
+    _id: 54,
     brand_id: 14,
     brand_name: "Illy",
     brand_main_image: "./",
@@ -121,6 +141,7 @@ const brands = [
     category: "커피&음료",
   },
   {
+    _id: 55,
     brand_id: 15,
     brand_name: "Gongcha",
     brand_main_image: "./",
@@ -128,6 +149,7 @@ const brands = [
     category: "커피&음료",
   },
   {
+    _id: 56,
     brand_id: 16,
     brand_name: "Cocacola",
     brand_main_image: cocacola,
@@ -135,6 +157,7 @@ const brands = [
     category: "커피&음료",
   },
   {
+    _id: 57,
     brand_id: 17,
     brand_name: "Pepsi",
     brand_main_image: pepsi,
@@ -142,6 +165,7 @@ const brands = [
     category: "커피&음료",
   },
   {
+    _id: 58,
     brand_id: 18,
     brand_name: "Fanta",
     brand_main_image: "./",
@@ -149,6 +173,7 @@ const brands = [
     category: "커피&음료",
   },
   {
+    _id: 59,
     brand_id: 19,
     brand_name: "Monster",
     brand_main_image: monster,
@@ -156,6 +181,7 @@ const brands = [
     category: "커피&음료",
   },
   {
+    _id: 60,
     brand_id: 20,
     brand_name: "RedBull",
     brand_main_image: redbull,
@@ -163,6 +189,7 @@ const brands = [
     category: "커피&음료",
   },
   {
+    _id: 101,
     brand_id: 21,
     brand_name: "Tesla",
     brand_main_image: "./",
@@ -170,6 +197,7 @@ const brands = [
     category: "자동차",
   },
   {
+    _id: 102,
     brand_id: 22,
     brand_name: "Tesla",
     brand_main_image: "./",
@@ -177,6 +205,7 @@ const brands = [
     category: "자동차",
   },
   {
+    _id: 103,
     brand_id: 23,
     brand_name: "Tesla",
     brand_main_image: "./",
@@ -184,6 +213,7 @@ const brands = [
     category: "자동차",
   },
   {
+    _id: 104,
     brand_id: 24,
     brand_name: "Tesla",
     brand_main_image: "./",
@@ -191,6 +221,7 @@ const brands = [
     category: "자동차",
   },
   {
+    _id: 105,
     brand_id: 25,
     brand_name: "Tesla",
     brand_main_image: "./",
@@ -198,6 +229,7 @@ const brands = [
     category: "자동차",
   },
   {
+    _id: 106,
     brand_id: 26,
     brand_name: "Tesla",
     brand_main_image: "./",
@@ -205,6 +237,7 @@ const brands = [
     category: "자동차",
   },
   {
+    _id: 107,
     brand_id: 27,
     brand_name: "Tesla",
     brand_main_image: "./",
@@ -212,6 +245,7 @@ const brands = [
     category: "자동차",
   },
   {
+    _id: 108,
     brand_id: 28,
     brand_name: "Tesla",
     brand_main_image: "./",
@@ -219,6 +253,7 @@ const brands = [
     category: "자동차",
   },
   {
+    _id: 109,
     brand_id: 29,
     brand_name: "Tesla",
     brand_main_image: "./",
@@ -226,6 +261,7 @@ const brands = [
     category: "자동차",
   },
   {
+    _id: 110,
     brand_id: 30,
     brand_name: "Tesla",
     brand_main_image: "./",
