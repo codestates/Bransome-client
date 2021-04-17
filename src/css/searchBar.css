@@ -54,3 +54,9 @@
     font-size: 20px;
   }
 }
+
+@media all and (max-width: 400px) {
+  .search {
+    width: 90%;
+  }
+}

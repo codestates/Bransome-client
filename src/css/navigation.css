@@ -83,7 +83,6 @@
 .menu_btn:hover {
   padding: 8px 20px;
   transition: all 0.3s ease-out;
-
   transition: 250ms;
 }
 
@@ -166,7 +165,78 @@
     display: block;
     margin: 1rem auto;
     width: 50%;
-    height: 8%;
+    height: 60px;
+    font-size: 2rem;
+  }
+}
+
+@media all and (min-width: 200px) and (max-width: 450px) {
+  /* .navbar_box {
+    height: 100px;
+  }
+  .navbar_link_btn {
+    display: none;
+    transition: linear 1s;
+  }
+  */
+  .nav_menu_box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav_menu_box.active {
+    background: var(--main-body-color);
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+  .liitems {
+    margin-top: 2%;
+  }
+  .menu_icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-70%, 50%);
+
+    cursor: pointer;
+  }
+  .menu_bars {
+    display: block;
+    font-size: 2em;
+    color: white;
+    transition: linear 1s;
+  }
+  .menu_unknown {
+    font-size: 2em;
+    color: white;
+  }
+
+  .navbar_link_btn {
+    text-align: center;
+    font-size: 2rem;
+    width: 100%;
+    display: table;
+  }
+
+  .navbar_link_btn:hover {
+    background-color: white;
+    color: var(--main-body-color);
+  }
+  .modal_login_btn {
+    display: block;
+    margin: 1rem auto;
+    width: 50%;
+    height: 60px;
     font-size: 2rem;
   }
 }
