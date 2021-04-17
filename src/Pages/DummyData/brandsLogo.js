@@ -25,6 +25,7 @@ const brands = [
     brand_main_image: apple,
     brand_sub_image: "",
     category: "IT&미디어",
+    urls: "/1111",
   },
   {
     brand_id: 2,
@@ -32,6 +33,7 @@ const brands = [
     brand_main_image: microsoft,
     brand_sub_image: "",
     category: "IT&미디어",
+    urls: "/1112",
   },
   {
     brand_id: 3,
