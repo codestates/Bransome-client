@@ -1,6 +1,5 @@
 import react from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import FooterContent from "./components/FooterContent";
 import Navigation from "./components/Navigation";
 
 import Best20 from "./Pages/BestPage/BestPage";

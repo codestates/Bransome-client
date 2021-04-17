@@ -35,7 +35,7 @@ const BrandPages = (props) => {
       <div id="brands_view">
         <div className="brand_left_view">
           <header className="brand_header">
-            <h2>좋아하는 브랜드를 마이페이지에 담아보세요.</h2>
+            <h2>좋아하는 브랜드를 찾아보세요.</h2>
           </header>
           <div className="brand_search_box">
             <SearchBar />

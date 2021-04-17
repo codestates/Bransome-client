@@ -43,48 +43,46 @@ const BrandInfo = ({ showInfo }) => {
   };
 
   return (
-    <>
-      <div id="brandinfo_container">
-        <article className="brandInfo_logo">
-          <img
-            id="brands_logo"
-            src={detailBrands.brand_main_image}
-            alt="brandInfo"
-          />
-        </article>
-        <section id="contents-top">
-          <div className="contents-action">
-            <Link to="/brand">
-              <button className="back_btn">뒤로가기</button>
-            </Link>
-            <div className="views">15.8k</div>
-            <div className="eyeIcon">
-              <FontAwesomeIcon icon={faEye} />
-            </div>
-
-            {/* 하트 온, 오프 */}
-            <div className="heartIcon" onClick={handleHeart}>
-              {heart ? (
-                <FontAwesomeIcon className="heartIconOn" icon={faUnHeart} />
-              ) : (
-                <FontAwesomeIcon icon={faHeart} />
-              )}
-            </div>
-
-            {/* 북마크 온, 오프 */}
-            <div className="bookmarkIcon" onClick={handleBookmark}>
-              {bookmark ? (
-                <FontAwesomeIcon icon={faBookUnMark} />
-              ) : (
-                <FontAwesomeIcon icon={faBookmark} />
-              )}
-            </div>
+    <div id="brandinfo_container">
+      <article className="brandInfo_logo">
+        <img
+          id="brands_logo"
+          src={detailBrands.brand_main_image}
+          alt="brandInfo"
+        />
+      </article>
+      <section id="contents-top">
+        <div className="contents-action">
+          <Link to="/brand">
+            <button className="back_btn">뒤로가기</button>
+          </Link>
+          <div className="views">15.8k</div>
+          <div className="eyeIcon">
+            <FontAwesomeIcon icon={faEye} />
           </div>
-        </section>
-        <article id="ssssss"></article>
-      </div>
+
+          {/* 하트 온, 오프 */}
+          <div className="heartIcon" onClick={handleHeart}>
+            {heart ? (
+              <FontAwesomeIcon className="heartIconOn" icon={faUnHeart} />
+            ) : (
+              <FontAwesomeIcon icon={faHeart} />
+            )}
+          </div>
+
+          {/* 북마크 온, 오프 */}
+          <div className="bookmarkIcon" onClick={handleBookmark}>
+            {bookmark ? (
+              <FontAwesomeIcon icon={faBookUnMark} />
+            ) : (
+              <FontAwesomeIcon icon={faBookmark} />
+            )}
+          </div>
+        </div>
+      </section>
+      <article id="ssssss"></article>
       <FooterContent />
-    </>
+    </div>
   );
 };
 

@@ -16,15 +16,15 @@
   font-family: "PT Sans", sans-serif;
 }
 ::-webkit-scrollbar {
-  width: 5px;
-  background-color: inherit;
+  width: 10px;
+  height: 8px;
+  background-color: rgb(48, 48, 48);
 }
 /* ::-webkit-scrollbar-track {
 } */
 ::-webkit-scrollbar-thumb {
-  background: var(--main-btn-color);
-  border-radius: 7px;
-  width: 30px;
+  border-radius: 4px;
+  background: rgb(88, 88, 88);
 }
 button {
   border: none;
@@ -37,11 +37,11 @@ video {
   position: absolute;
   z-index: -1;
 }
-
+/* #191f28; */
 :root {
   --brands-background: url("../images/background3.jpg");
   --main-btn-color: rgb(255, 115, 0);
-  --main-body-color: #191f28;
+  --main-body-color: black;
   --sub-body-color: #e6e6e6;
   --main-text-color: #f0f4f5;
   --width-pers: 100%;
@@ -49,3 +49,7 @@ video {
   --height-pers: 100%;
   --height-vh: 100vh;
 }
+
+/* Style Attribute {
+  --page-shell-max-content-width: 1760px;
+} */
