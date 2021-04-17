@@ -14,8 +14,8 @@ function Bransome() {
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/brand" component={BrandPages} />
-        <Route path="/best20" component={Best20} />
-        <Route path="/brandinfo" component={BrandInfo} />
+        <Route path="/best20" exact component={Best20} />
+        <Route path="/brandinfo/:id" component={BrandInfo} />
         <Route path="/mypage" component={MyPage} />
       </Switch>
     </Router>

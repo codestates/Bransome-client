@@ -1,5 +1,3 @@
-import "../../css/BrandInfo.css";
-
 const BrandInfoChart = () => {
   return (
     <section id="contents">
