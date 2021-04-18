@@ -2,6 +2,14 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 
 class WorkList extends Component {
+
+  componentDidMount(){
+    fetch('/users')
+    .then(res =>res.json())
+    .then(customers => this.setState({customers},()=> console.log(customers)))
+  }
+
+
   render() {
     const { works } = this.props;
 
