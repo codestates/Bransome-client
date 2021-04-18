@@ -13,6 +13,8 @@ const SearchBar = () => {
     console.log(1);
     setSearching(query);
   };
+
+  
   return (
     <div className="search">
       <input
