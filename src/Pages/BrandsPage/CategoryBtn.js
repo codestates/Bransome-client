@@ -4,7 +4,7 @@ const CategoryBtn = ({ name, handleSetCategory, catogryActive }) => {
   return (
     <Link
       to={`/brand/${name}`}
-      className={`catogry_btn ${catogryActive ? "categoryActive" : null}`}
+      className={`category_btn ${catogryActive ? "categoryActive" : null}`}
       onClick={() => handleSetCategory(name)}
     >
       {name.toUpperCase()}

@@ -3,11 +3,11 @@ import {
   Route,
   BrowserRouter as Router,
   Switch,
+  useParams,
 } from "react-router-dom";
 
 import React, { useState } from "react";
 
-import netflix from "../../images/test.netflix.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark, faHeart } from "@fortawesome/free-regular-svg-icons";
 
@@ -17,13 +17,19 @@ import {
   faEye,
 } from "@fortawesome/free-solid-svg-icons";
 
-import history from "./BrandInfoHistory";
-import chart from "./BrandInfoChart";
-import insight from "./BrandInfoInsight";
+import history from "./sections/BrandInfoHistory";
+import chart from "./sections/BrandInfoChart";
+import insight from "./sections/BrandInfoInsight";
 
-import "../../css/BrandInfo.css";
+import { connect } from "react-redux";
+import FooterContent from "../../components/FooterContent";
 
-const BrandInfo = ({ match }) => {
+const BrandInfo = ({ showInfo }) => {
+  const { id } = useParams();
+  let detailBrands = showInfo.brands.find(
+    (item) => item.brand_id === parseInt(id),
+  );
+
   const [bookmark, setBookmark] = useState(false);
 
   const handleBookmark = () => {
@@ -35,29 +41,21 @@ const BrandInfo = ({ match }) => {
   const handleHeart = () => {
     setHeart(!heart);
   };
-  const [brand, setBrand] = useState({});
+
   return (
-    <div className="wrap">
-      <section className="logo">
-        <img id="brand-logo" src={netflix} alt="netflix"></img>
-      </section>
-
+    <div id="brandinfo_container">
+      <article className="brandInfo_logo">
+        <img
+          id="brands_logo"
+          src={detailBrands.brand_main_image}
+          alt="brandInfo"
+        />
+      </article>
       <section id="contents-top">
-        <div className="contents-menu">
-          <Link to={`${match.url}`} className="brandinfo-history">
-            <button className="content-subject-button" renderAs="button">
-              <span>히스토리</span>
-            </button>
-          </Link>
-
-          <Link to={`${match.url}/chart`} className="brandinfo-chart">
-            <button className="content-subject-button">주가 차트</button>
-          </Link>
-          <Link to={`${match.url}/insight`} className="brandinfo-insight">
-            <button className="content-subject-button">인사이트</button>
-          </Link>
-        </div>
         <div className="contents-action">
+          <Link to="/brand">
+            <button className="back_btn">뒤로가기</button>
+          </Link>
           <div className="views">15.8k</div>
           <div className="eyeIcon">
             <FontAwesomeIcon icon={faEye} />
@@ -82,15 +80,14 @@ const BrandInfo = ({ match }) => {
           </div>
         </div>
       </section>
-      <Router>
-        <Switch>
-          <Route path={`${match.url}`} exact component={history} />
-          <Route path={`${match.url}/chart`} component={chart} />
-          <Route path={`${match.url}/insight`} component={insight} />
-        </Switch>
-      </Router>
+      <article id="ssssss"></article>
+      <FooterContent />
     </div>
   );
 };
 
-export default BrandInfo;
+const mapStateToProps = (state) => ({
+  showInfo: state.showInfo,
+});
+
+export default connect(mapStateToProps)(BrandInfo);

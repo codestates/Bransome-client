@@ -1,13 +1,16 @@
 .home_view_container1 {
+  margin-top: -70px;
   height: 100vh;
   width: 100%;
   background-color: var(--main-body-color);
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
 }
 
 .view_1 {
+  margin-bottom: 200px;
   color: white;
   display: flex;
   flex-direction: column;
@@ -16,11 +19,13 @@
 }
 
 .view_1 > h1 {
-  margin-top: 15%;
-  font-size: 5rem;
+  margin-top: 25%;
+  font-size: 4rem;
+  margin-bottom: -3%;
 }
 
 .view_1 > img {
+  width: 60%;
 }
 
 .view_1 > p {
@@ -30,14 +35,22 @@
   color: var(--main-btn-color);
 }
 
+/* 950이하에서 적용 */
 @media all and (max-width: 950px) {
+  .home_view_container1 {
+    justify-content: end;
+  }
+
+  .view_1 {
+    margin-bottom: 220px;
+  }
   .view_1 > h1 {
-    margin-top: 25%;
+    margin-top: 200px;
     font-size: 3rem;
     transition: 0.5s linear;
   }
   .view_1 > img {
-    width: 100%;
+    width: 60%;
     transition: 0.5s linear;
   }
   .view_1 > p {
@@ -48,38 +61,27 @@
   }
 }
 
-@media all and (max-width: 800px) {
+/* 419이하에서 적용 */
+@media all and (max-width: 419px) {
+  .home_view_container1 {
+    height: 65vh;
+  }
+  .view_1 {
+    margin-bottom: 5%;
+  }
   .view_1 > h1 {
-    margin-top: 25%;
-    font-size: 3rem;
+    margin-top: 200px;
+    font-size: 2rem;
     transition: 0.5s linear;
   }
   .view_1 > img {
-    width: 100%;
+    width: 80%;
     transition: 0.5s linear;
   }
   .view_1 > p {
     margin-top: 1%;
 
-    font-size: 1.5rem;
-    transition: 0.5s linear;
-  }
-}
-
-@media all and (max-width: 650px) {
-  .view_1 > h1 {
-    margin-top: 25%;
-    font-size: 3rem;
-    transition: 0.5s linear;
-  }
-  .view_1 > img {
-    width: 100%;
-    transition: 0.5s linear;
-  }
-  .view_1 > p {
-    margin-top: 1%;
-
-    font-size: 1.5rem;
+    font-size: 0.9rem;
     transition: 0.5s linear;
   }
 }

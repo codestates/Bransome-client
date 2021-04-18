@@ -1,5 +1,4 @@
 import React from "react";
-import "../../css/BrandInfo.css";
 
 const BrandInfoContentsBox = () => {
   return (

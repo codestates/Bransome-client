@@ -16,6 +16,7 @@ import "./css/BrandCategoryView.css";
 import "./css/IntroduceView.css";
 import "./css/BrandsPages.css";
 import "./css/best20.css";
+import "./css/BrandInfo.css";
 
 ReactDOM.render(
   <React.StrictMode>

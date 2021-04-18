@@ -3,14 +3,15 @@ import React, { useState, Component, useEffect } from "react";
 import SearchBar from "../../components/SearchBar";
 import FooterContent from "../../components/FooterContent";
 
-import brands from "../DummyData/brandsLogo";
 import BrandScreen from "./BrandScreen";
 import CategoryBtn from "./CategoryBtn";
+import { connect } from "react-redux";
 
 // const categoryList = ["All", ...new Set(brands.map((b) => b.category))];
 // console.log(categoryList);
 
-const BrandPages = ({ match }) => {
+const BrandPages = (props) => {
+  const { brands } = props.showInfo;
   const [showBrand, setShowBrand] = useState([]);
   const [categoriesBtn, setCategoriesBtn] = useState("All");
 
@@ -26,7 +27,7 @@ const BrandPages = ({ match }) => {
   useEffect(() => {
     categoriesBtn === "All"
       ? setShowBrand(brands)
-      : setShowBrand(brands.filter((b) => b.category === categoriesBtn));
+      : setShowBrand(brands.filter((br) => br.category === categoriesBtn));
   }, [categoriesBtn]);
 
   return (
@@ -34,7 +35,7 @@ const BrandPages = ({ match }) => {
       <div id="brands_view">
         <div className="brand_left_view">
           <header className="brand_header">
-            <h2>좋아하는 브랜드를 마이페이지에 담아보세요.</h2>
+            <h2>좋아하는 브랜드를 찾아보세요.</h2>
           </header>
           <div className="brand_search_box">
             <SearchBar />
@@ -103,6 +104,9 @@ const BrandPages = ({ match }) => {
           </article>
         </div>
         <div className="brand_right_view">
+          {/* {brands.map((br, idx) => (
+            <BrandScreen key={br._id} brandData={br} />
+          ))} */}
           <BrandScreen showBrand={showBrand} />
         </div>
       </div>
@@ -111,4 +115,8 @@ const BrandPages = ({ match }) => {
   );
 };
 
-export default BrandPages;
+const mapStateToProps = (state) => ({
+  showInfo: state.showInfo,
+});
+
+export default connect(mapStateToProps)(BrandPages);

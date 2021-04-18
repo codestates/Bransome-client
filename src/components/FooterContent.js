@@ -6,11 +6,10 @@ const FooterContent = () => {
   return (
     <footer id="footer_container">
       <div className="footer_text_area">
-        <p className="footer_text1">Bransom v.Demo</p>
+        <p className="footer_text1">Bransome v.Demo © 2021 Bgle</p>
         <p className="footer_text2">
-          All About Brand! - Sangun Lee, Sunghyun Hong, Seonah Park, Sungwoo Lee
+          Team. Bgle - Sangun Lee, Sunghyun Hong, Seonah Park, Sungwoo Lee
         </p>
-        <p className="footer_text3">2021. Bgle all rights reserved.</p>
       </div>
       <div className="footer_btn_box">
         <a
