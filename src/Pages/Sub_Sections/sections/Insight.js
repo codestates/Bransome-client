@@ -1,6 +1,6 @@
 import React from "react";
 
-const BrandInfoContentsBox = () => {
+const InsightContents = ({ insightData }) => {
   return (
     <section id="contents">
       <div className="contents-box">
@@ -14,4 +14,4 @@ const BrandInfoContentsBox = () => {
   );
 };
 
-export default BrandInfoContentsBox;
+export default InsightContents;

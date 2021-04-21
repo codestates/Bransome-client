@@ -1,4 +1,4 @@
-import brandData from "../../Pages/DummyData/brandsLogo";
+import brandData from "../../Pages/DummyData/DummyBrandInfo";
 const initialState = {
   brands: brandData,
   brandSearh: [],

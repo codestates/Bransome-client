@@ -2,9 +2,6 @@ import SearchBar from "../../components/SearchBar";
 import Bransome from "../../logos/bransome4-white2.png";
 
 const WelcomeView = () => {
-
- 
-
   return (
     <article className="home_view_container1">
       <div className="view_1">

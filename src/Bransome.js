@@ -1,4 +1,3 @@
-import react from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navigation from "./components/Navigation";
 
@@ -6,7 +5,7 @@ import Best20 from "./Pages/BestPage/BestPage";
 import BrandPages from "./Pages/BrandsPage/BrandsPage";
 import Home from "./Pages/Home";
 import BrandInfo from "./Pages/Sub_Sections/BrandInfo";
-import MyPage from "./Pages/Sub_Sections/MyPage";
+import MyPage from "./Pages/MyPages/MyPage";
 function Bransome() {
   return (
     <Router>

@@ -1,14 +1,14 @@
 #brands_view {
   display: flex;
   flex-direction: row;
-  height: 100vh;
-  width: 100%;
+  height: var(--height-vh);
+  width: var(--width-pers);
 }
 
 .brand_left_view {
   display: flex;
   flex-direction: column;
-
+  justify-content: flex-start;
   width: 30%;
 }
 .brand_header > h2 {
@@ -19,7 +19,7 @@
 .brand_search_box {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+
   align-items: center;
 }
 
@@ -28,7 +28,6 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-  margin-left: 5%;
 }
 
 .category_btn_box {
@@ -43,18 +42,19 @@
   font-size: 1.2rem;
 
   border-radius: 5px;
-  background: white;
+  background: var(--main-btn-color);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.315);
   padding: 1% 5%;
   text-align: center;
-  color: gray;
+  font-weight: bold;
+  color: white;
 }
 
 .category_btn:active,
 .category_btn:focus,
 .category_btn:hover {
-  background: rgba(128, 128, 128, 0.349);
-  color: black;
+  background: rgba(255, 123, 0, 0.349);
+  color: rgb(0, 0, 0);
 }
 
 .brand_right_view {
@@ -69,22 +69,22 @@
 
 .brand_scroll_content {
   width: 98%;
-  height: 98vh;
+  height: var(--height-vh);
   background: var(--main-body-color);
 
   display: flex;
   flex-wrap: wrap;
 
-  column-gap: 10px;
   padding: 1%;
   overflow-x: hidden;
   overflow-y: scroll;
 }
 
 .brand_img_box {
-  height: 14%;
+  margin: 0.5%;
+  height: 20%;
 
-  padding: 0.2%;
+  padding: 1%;
   border-radius: 5px;
 
   background: var(--sub-body-color);
@@ -101,45 +101,156 @@
   object-fit: contain;
 }
 
-@media all and (max-width: 1450px) {
-  .brand_header > h2 {
-    padding: 5%;
-    font-size: 4.5rem;
-    transition: 0.5s linear;
-  }
-  @media all and (max-width: 1350px) {
-    .brand_header > h2 {
-      padding: 5%;
-      font-size: 4rem;
-      transition: 0.5s linear;
-    }
-    @media all and (max-width: 1170px) {
-      .brand_header > h2 {
-        padding: 5%;
-        font-size: 3rem;
-        transition: 0.5s linear;
-      }
-    }
-  }
-}
-
-@media all and (max-width: 900px) {
+@media all and (max-width: 1030px) and (max-height: 1400px) {
   #brands_view {
     flex-direction: column;
+    height: 100vh;
   }
   .brand_left_view {
     width: 100%;
-    height: 40%;
+    height: 30vh;
   }
 
   .brand_header > h2 {
-    text-align: center;
     font-size: 2rem;
+    text-align: center;
+    padding: 0.5%;
+  }
+  .brand_search_box {
     padding: 1%;
+    height: 9vh;
   }
   .brand_right_view {
     width: 100%;
-    height: 70%;
-    overflow-y: scroll;
+    height: 70vh;
+  }
+
+  .brand_img_box {
+    margin: 1%;
+    height: 25%;
+  }
+
+  .category_btn {
+    font-size: 1rem;
+    margin: 1%;
+    border-radius: 5px;
+
+    color: white;
+  }
+
+  @media all and (min-width: 320px) and (min-height: 400px) {
+    #brands_view {
+      flex-direction: column;
+      height: 100vh;
+    }
+    .brand_left_view {
+      width: 100%;
+      height: 40vh;
+    }
+
+    .brand_header > h2 {
+      font-size: 1.5rem;
+      text-align: center;
+      padding: 0.5%;
+    }
+    .brand_search_box {
+      padding: 1%;
+      height: 9vh;
+    }
+    .brand_right_view {
+      width: 100%;
+      height: 60vh;
+    }
+
+    .brand_img_box {
+      margin: 1%;
+      height: 25%;
+    }
+
+    .category_btn {
+      font-size: 1rem;
+      margin: 1%;
+      border-radius: 5px;
+
+      color: white;
+    }
+  }
+
+  @media all and (width: 375px) and (height: 667px) {
+    #brands_view {
+      flex-direction: column;
+      width: 100%;
+      height: 100vh;
+    }
+    .brand_left_view {
+      width: 100%;
+      height: 30vh;
+    }
+
+    .brand_header > h2 {
+      font-size: 1.5rem;
+      text-align: center;
+      padding: 0.5%;
+    }
+    .brand_search_box {
+      padding: 1%;
+      height: 9vh;
+    }
+    .brand_right_view {
+      width: 100%;
+
+      height: 70vh;
+    }
+
+    .brand_img_box {
+      margin: 1%;
+      height: 25%;
+    }
+
+    .category_btn {
+      font-size: 1rem;
+      margin: 1%;
+      border-radius: 5px;
+
+      color: white;
+    }
+  }
+
+  @media all and (min-width: 700px) and (min-height: 1100px) {
+    #brands_view {
+      flex-direction: column;
+      height: 100vh;
+    }
+    .brand_left_view {
+      width: 100%;
+      height: 30vh;
+    }
+
+    .brand_header > h2 {
+      font-size: 2rem;
+      text-align: center;
+      padding: 0.5%;
+    }
+    .brand_search_box {
+      padding: 1%;
+      height: 9vh;
+    }
+    .brand_right_view {
+      width: 100%;
+      height: 70vh;
+    }
+
+    .brand_img_box {
+      margin: 1%;
+      height: 25%;
+    }
+
+    .category_btn {
+      font-size: 1rem;
+      margin: 1%;
+      border-radius: 5px;
+
+      color: white;
+    }
   }
 }

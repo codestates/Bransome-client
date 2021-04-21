@@ -1,4 +1,4 @@
-import "../css/brandsItembox.css";
+import "../../../css/brandsItembox.css";
 
 const BrandItem = ({ item }) => {
   return (

@@ -1,9 +1,8 @@
-import React, { Component, useState, useEffect } from "react";
-import { connect } from "react-redux";
+import React, { useState } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
-import brands from "../Pages/DummyData/brandsLogo";
+import brands from "../Pages/DummyData/DummyBrandInfo";
 const SearchBar = () => {
   const [query, setQuery] = useState(brands);
   const [searching, setSearching] = useState();
@@ -13,8 +12,6 @@ const SearchBar = () => {
     console.log(1);
     setSearching(query);
   };
-
-  
   return (
     <div className="search">
       <input

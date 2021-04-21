@@ -14,7 +14,7 @@ const BrandScreen = ({ showBrand }) => {
             <Link
               key={idx}
               className="brand_img_box"
-              to={`/brandInfo/${item.brand_id}`}
+              to={`/brandInfo/${item._id}`}
             >
               <img className="brand_img" src={item.brand_main_image} />
             </Link>

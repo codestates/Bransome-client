@@ -14,6 +14,7 @@ export const FILTER_BRAND_BY_CATEGORY = "FILTER_BRAND_BY_CATEGORY";
 export const ADD_BRAND = "ADD_BRAND";
 export const REMOVE_BRAND = "REMOVE_BRAND";
 export const DETAILS = "DETAILS";
+
 /* ACTIONS */
 
 // const a = () => {};
@@ -33,25 +34,4 @@ export const setLoanding = () => {
   return {
     type: LOADING,
   };
-};
-
-export const openModal = () => {
-  console.log("openModal");
-  return {
-    type: OPEN_MODAL,
-    payload: true,
-  };
-};
-
-export const closeModal = () => {
-  return {
-    type: CLOSE_MODAL,
-    payload: false,
-  };
-};
-
-export const getDetails = () => (dispatch) => {
-  dispatch({
-    type: DETAILS,
-  });
 };

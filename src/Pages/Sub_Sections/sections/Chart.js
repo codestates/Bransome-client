@@ -1,4 +1,4 @@
-const BrandInfoChart = () => {
+const ChartContent = ({ chartData }) => {
   return (
     <section id="contents">
       <div className="contents-box">Chart</div>
@@ -6,4 +6,4 @@ const BrandInfoChart = () => {
   );
 };
 
-export default BrandInfoChart;
+export default ChartContent;

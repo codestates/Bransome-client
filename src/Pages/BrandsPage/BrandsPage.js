@@ -7,11 +7,7 @@ import BrandScreen from "./BrandScreen";
 import CategoryBtn from "./CategoryBtn";
 import { connect } from "react-redux";
 
-// const categoryList = ["All", ...new Set(brands.map((b) => b.category))];
-// console.log(categoryList);
-
 const BrandPages = (props) => {
-  const { brands } = props.showInfo;
   const [showBrand, setShowBrand] = useState([]);
   const [categoriesBtn, setCategoriesBtn] = useState("All");
 
@@ -30,6 +26,7 @@ const BrandPages = (props) => {
       : setShowBrand(brands.filter((br) => br.category === categoriesBtn));
   }, [categoriesBtn]);
 
+  const { brands } = props.showInfo;
   return (
     <>
       <div id="brands_view">

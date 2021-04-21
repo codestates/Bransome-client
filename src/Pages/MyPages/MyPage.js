@@ -1,5 +1,5 @@
 import logos from "../../logos/brandlogo/logo";
-import BrandItem from "../../components/BrandsItem";
+import BrandItem from "./sections/BrandsItem";
 import FooterContent from "../../components/FooterContent";
 import SearchBar from "../../components/SearchBar";
 import profileimg from "../../images/profile.png";
