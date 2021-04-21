@@ -1,8 +1,12 @@
-//기본적인 initialState설정
+import brandData from "../../Pages/DummyData/DummyBrandInfo";
 const initialState = {
-  brands: [],
+  brands: brandData,
+  brandSearh: [],
+
   value: "",
-  brand: [],
+  brandName: [],
   loading: false,
+  openModalScreen: false,
 };
+
 export default initialState;

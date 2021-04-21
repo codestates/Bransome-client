@@ -4,15 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgb(25, 31, 40);
-  background: linear-gradient(
-    180deg,
-    rgba(25, 31, 40, 0) 0%,
-    rgba(25, 31, 40, 0.37) 1%,
-    rgba(25, 31, 40, 0.76) 2%,
-    rgba(25, 31, 40, 0.945) 4%,
-    rgba(25, 31, 40, 1) 100%
-  );
+  background: var(--main-body-color);
 }
 
 .view2_content_box-1,
@@ -20,10 +12,8 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: space-around;
-  background-color: white;
-  width: 40%;
-  height: 80vh;
-  margin: 20px;
-  border-radius: 10px;
+  justify-content: center;
+
+  width: 100vw;
+  height: 90vh;
 }
