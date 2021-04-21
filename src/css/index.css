@@ -39,9 +39,11 @@ video {
 }
 /* #191f28; */
 :root {
-  --brands-background: url("../images/background3.jpg");
+  background: black;
+  /* --brands-background: url("../images/background3.jpg"); */
   --main-btn-color: rgb(255, 115, 0);
   --main-body-color: black;
+  --main-box-color: #191f28;
   --sub-body-color: #e6e6e6;
   --main-text-color: #f0f4f5;
   --width-pers: 100%;

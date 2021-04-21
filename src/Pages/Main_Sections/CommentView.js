@@ -6,8 +6,13 @@ const CommentView = () => {
     <section className="home_view_container3">
       <video src="/videos/video-5.mp4" autoPlay loop muted className="video" />
       <aside className="view3_left">
-        <h3 data-aos="fade-right">이용해 보신 분들의 후기입니다.</h3>
+        <div className="view3_left_box">
+          <h3 data-aos="fade-right" className="left_title">
+            브랜썸을 만나고, 어떠셨나요?
+          </h3>
+        </div>
       </aside>
+
       <aside className="view3_right">
         <ul className="comments_container">
           {comments.map((data, idx) => (
