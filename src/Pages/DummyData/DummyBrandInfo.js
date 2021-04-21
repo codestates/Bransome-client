@@ -264,7 +264,7 @@ const DummyBrandInfo = [
     brand_name: "StarBucks",
     brand_main_image: starbucks,
     brand_sub_image: "",
-    brand_link: "",
+    brand_link: "https://www.starbucks.co.kr/index.do",
     category: "커피&음료",
     contents: {
       history: `스타벅스(영어: Starbucks Corporation)는 세계에서 가장 큰 다국적 커피 전문점이다. 64개국에서 총 23,187개의 매점을 운영하고 있다. 나라별로 미국에서 12,973개, 중국에 1,897개, 캐나다에 1,550개, 일본에는 1,088개, 영국에는 927개, 대한민국에 1,000개, 멕시코에 356개 등을 운영하고 있다.
@@ -289,7 +289,7 @@ const DummyBrandInfo = [
     brand_name: "ToSomePlace",
     brand_main_image: twosome,
     brand_sub_image: "",
-    brand_link: "",
+    brand_link: "https://www.twosome.co.kr:7009/main.asp",
     category: "커피&음료",
     contents: {
       history: `투썸플레이스(A Twosome Place)는 CJ그룹의 디저트 카페 프랜차이즈 기업이다. 2002년 신촌점을 시작으로 2018년 현재 전국에 1,000여개의 점포를 운영하고 있다. 2009년 가맹사업을 시작하면서 2011년에는 중국 북경에 '途尚咖啡'라는 상호로 1호점을 오픈하였다. 2018년 2월 1일 CJ푸드빌 커피사업부문을 분사하여 법인화 되었다.
@@ -303,7 +303,7 @@ const DummyBrandInfo = [
     brand_name: "Illy",
     brand_main_image: illy,
     brand_sub_image: "",
-    brand_link: "",
+    brand_link: "http://www.illycaffe.co.kr/",
     category: "커피&음료",
     contents: {
       history: `제1차 세계 대전 당시 헝가리에서 이탈리아 트리에스테로 이주해 온 기술자인 프란체스코 일리(Francesco Illy)에 의해 1933년에 설립되었다.
@@ -320,7 +320,7 @@ const DummyBrandInfo = [
     brand_name: "Gongcha",
     brand_main_image: gongcha,
     brand_sub_image: "",
-    brand_link: "",
+    brand_link: "https://www.gong-cha.co.kr/brand/",
     category: "커피&음료",
     contents: {
       history: `공차(Gong cha)는 타이완 가오슝에서 2006년 설립된 밀크티 브랜드이다. 2010년대 초반 일어난 타피오카 펄이 들어간 밀크티 선풍을 타고 2012년 한국에 상륙하여 우후죽순처럼 한국에 개점한 대만 밀크티 브랜드 중 가장 많은 매장을 보유하고 있다. 2017년 1월에 공차코리아가 타이완 본사를 인수하였다.
@@ -336,7 +336,7 @@ const DummyBrandInfo = [
     brand_name: "Cocacola",
     brand_main_image: cocacola,
     brand_sub_image: "",
-    brand_link: "",
+    brand_link: "http://www.ccbk.co.kr/index.jsp",
     category: "커피&음료",
     contents: {
       history: `코카-콜라(영어: Coca-Cola)는 미국의 코카-콜라 컴퍼니에서 출시한 콜라 브랜드이다. 전 세계적으로 200여 개국 이상에서 팔리고 있는 코카-콜라는 가장 인지도 높은 상표이기도 하다. 또한 코카-콜라는 미국과 자본주의를 상징하기도 한다. 코카-콜라의 경쟁사로는 펩시콜라가 있으며, 이 두 음료간의 각 시장에서의 마케팅 전쟁은 유명하다. 한편, 코카-콜라 컴퍼니가 자존심을 이로 지분을 인수인계한 페루의 고유 브랜드인 잉카 콜라는 아직도 페루 내 콜라 판매율 1위를 달리고 있다.
@@ -350,7 +350,7 @@ const DummyBrandInfo = [
     brand_name: "Pepsi",
     brand_main_image: pepsi,
     brand_sub_image: "",
-    brand_link: "",
+    brand_link: "https://www.pepsi.com/",
     category: "커피&음료",
     contents: {
       history: `펩시(영어: Pepsi)는 펩시코에서 생산하는 콜라다. 1898년 8월 28일 약사인 칼렙 브래드햄에 의해 만들어졌으며, 1903년 6월 16일에 정식으로 판매하였다.
@@ -366,7 +366,7 @@ const DummyBrandInfo = [
     brand_name: "Fanta",
     brand_main_image: fanta,
     brand_sub_image: "",
-    brand_link: "",
+    brand_link: "https://www.fanta.com/",
     category: "커피&음료",
     contents: {
       history: `환타(영어: Fanta)는 코카콜라 컴퍼니에서 출시한 과일맛 청량 음료 브랜드이다. 대한민국을 비롯한 세계 180개국에서 판매를 하고 있으나 맛은 나라마다 다르다.
@@ -377,10 +377,10 @@ const DummyBrandInfo = [
   {
     _id: 59,
     brand_id: 9,
-    brand_name: "Monster",
+    brand_name: "Monster Energy",
     brand_main_image: monster,
     brand_sub_image: "",
-    brand_link: "",
+    brand_link: "https://www.monsterbevcorp.com/",
     category: "커피&음료",
     contents: {
       history: `몬스터 에너지(영어: Monster Energy)는 2002년 몬스터 음료가 제조하기 시작한 에너지 음료이다. 검은색 캔과 초록색 발톱 모양의 M 로고가 그려진 보통 맛 음료는 로고가 "몬스터"의 발톱으로 찢어진 것처럼 보이게 했다. 또한, 이 에너지 음료 회사는 BMX, 모토크로스, 스케이트보드, 스노우보드, E스포츠 등의 익스트림 스포츠도 지원하고 있다. 또한, 몬스터 에너지는 애스킹 알렉산드리아, 월드 어라이브, 샤인다운, 이스케이프 더 페이트 등 세계적 음악 밴드를 지원하고 있다.
@@ -394,7 +394,7 @@ const DummyBrandInfo = [
     brand_name: "RedBull",
     brand_main_image: redbull,
     brand_sub_image: "",
-    brand_link: "",
+    brand_link: "https://www.redbull.com/kr-ko/",
     category: "커피&음료",
     contents: {
       history: `레드불(Red Bull)은 오스트리아의 음료 회사인 레드불 유한회사(Red Bull GmbH)가 제조하여 판매하는 카페인 에너지 음료이다.
@@ -409,7 +409,7 @@ const DummyBrandInfo = [
     brand_name: "Sprite",
     brand_main_image: sprite,
     brand_sub_image: "",
-    brand_link: "",
+    brand_link: "https://www.perrier.co.kr/",
     category: "커피&음료",
     contents: {
       history: `스프라이트(Sprite)는 미국의 코카콜라 컴퍼니에서 생산하고 있는 카페인이 없는 무색 투명의 착향 음료이다. 1961년에 미국에 도입되었다. 1929년에 "Lithiated Lemon"로 시작한 세븐업이 인기를 끌자 이에 응한 결정이었다. 초록색이나 파란색의 용기, 또는 초록색의 투명한 병에 용액이 담겨 나오며, "초록색과 파란색의 레이블"이 붙어 있다. 중국어권에서는 셰비(중국어: 雪碧)라고 불린다.
@@ -438,10 +438,15 @@ const DummyBrandInfo = [
     brand_name: "Peik",
     brand_main_image: peik,
     brand_sub_image: "",
-    brand_link: "",
+    brand_link: "http://paikdabang.com",
     category: "커피&음료",
     contents: {
-      history: "asddasas",
+      history: `2006년, 백종원이 운영하는 논현동 원조쌈밥집 점포 앞에 있던 스타벅스를 패러디한 '원조벅스'라는 이름의 커피 전문점이 들어서며 시작되었다. 홈페이지에 따르면 원조쌈밥집의 고객에게 서비스 차원의 커피를 제공하기 위해 탄생했다고 되어 있다. 보통 서비스 차원에서 커피 자판기를 놓거나 자판기형 원두분쇄 커피메이커를 들여 놓는 경우는 있지만, 백주부는 아예 서비스 차원의 커피를 위해 매장을 만들었다.
+
+      그러다가 스타벅스로부터 상표권 침해 행위로 고소를 당하고 2007년 '원조커피'라는 이름으로 상호를 변경했으며, 2008년 지금의 명칭인 '빽다방'이라는 이름으로 상호가 변경되었다. 2008년 '빽다방'의 로고는 베트남 모자를 쓴 '백종원'의 모습이었으며, 기존에는 베트남 음식점에서나 볼 수 있었던 베트남 핀 커피를 선보였지만, 지금의 로고로 바꾸었다.
+      
+      2016년 들어 페이코를 도입하고 온갖 프로모션을 하고 있다. NFC 결제 가능하다. 단 카드승인 문자에는 여전히 페이코로 뜬다.
+      `,
     },
   },
   {
@@ -450,7 +455,7 @@ const DummyBrandInfo = [
     brand_name: "Mountain Dew",
     brand_main_image: mountainDew,
     brand_sub_image: "",
-    brand_link: "",
+    brand_link: "https://www.mountaindew.com/",
     category: "커피&음료",
     contents: {
       history: `Mountain Dew(산이슬, 북미에서는 Mtn Dew). 펩시코에서 생산하는 탄산음료의 일종. 1940년에 출시되었다. 대한민국에서는 롯데칠성음료가 판매한다.
@@ -470,10 +475,14 @@ const DummyBrandInfo = [
     brand_name: "Hollys",
     brand_main_image: hollys,
     brand_sub_image: "",
-    brand_link: "",
+    brand_link: "https://www.hollys.co.kr/",
     category: "커피&음료",
     contents: {
-      history: "asddasas",
+      history: `할리스커피(영어: Holly's Coffee)는 1998년 6월 서울특별시 강남구에 한국 최초로 에스프레소 전문점을 개점한 커피전문점이다. 할리스커피는 2017년 10월 말 500여개의 매장을 운영하고 있으며 15개국과 마스터프랜차이즈를 통해 전 세계 각국에 매장을 확장해 나가고 있는 한국 최초의 브랜드다.
+      1998년 6월 서울특별시 강남구 강남역 근처에 처음 오픈하였다. 2003년에 극장 업체인 프리머스가 인수하면서 빠르게 성장하기 시작하였고, 2005년 2월 1일 주식회사 할리스에프앤비가 설립되었고,
+      2005년과 2006년에는 한국일보가 주관하는 '고객서비스 만족대상'을 받았다. 2007년에는 말레이시아 쿠알라룸푸르에 1호점을 오픈하면서 해외 시장 진출에 나섰으며, 2008년에는 로스앤젤레스에도 지점을 오픈했다.
+      이 후로 현재까지 많은 글로벌 지점들을 오픈하고 있다. 2010년에는 페루 리마 1호점을 오픈, 2011년에는 필리핀 ‘마닐라점’을 오픈, 2012년에는 중국 ‘심천 1호점’, ‘북경 1호점’을 오픈하였다. 계속해서, 2013년에는 '태국 방콕 1호점'을 오픈하였으며, 2014년에는 베트남 마스터 프랜차이즈와 체결하였다.
+      `,
     },
   },
   {
@@ -482,10 +491,12 @@ const DummyBrandInfo = [
     brand_name: "Dr.Pepper",
     brand_main_image: drpepper,
     brand_sub_image: "",
-    brand_link: "",
+    brand_link: "https://www.drpepper.com/en",
     category: "커피&음료",
     contents: {
-      history: "asddasas",
+      history: `닥터페퍼(영어: Dr. Pepper)는 미국 큐릭닥터페퍼에서 나오는 탄산 음료다. 찰스 앨더튼이 1880년에 개발한 후 1904년 미국에서 판매를 시작했다. 2019년 현재 유럽, 아시아, 캐나다, 멕시코, 오스트레일리아, 뉴질랜드, 남아메리카, 남아프리카 공화국에도 판매된다. 향과 맛이 독특한 이유는 23가지 맛이 섞였기 때문이다. 
+      닥터페퍼는 2008년부터 미국 내에서는 큐릭닥터페퍼가 생산 판매하며 유럽 지역과 대한민국에서는 코카콜라에서 판매권을 소지하게 되며  캐나다,오세아니아 지역은 펩시콜라가 판매권을 가지고 있다.
+      `,
     },
   },
   {
@@ -494,10 +505,13 @@ const DummyBrandInfo = [
     brand_name: "Coffe Beans",
     brand_main_image: coffeebean,
     brand_sub_image: "",
-    brand_link: "",
+    brand_link: "https://www.coffeebeankorea.com/main/main.asp",
     category: "커피&음료",
     contents: {
-      history: "asddasas",
+      history: `커피빈 & 티리프(영어: The Coffee Bean & Tea Leaf, ‘커피 콩과 찻잎’이라는 뜻) 또는 커피빈은 미국 로스앤젤레스에 본사가 있는 인터내셔널 커피 & 티 유한책임회사(International Coffee & Tea, LLC)에서 운영하고 있는 세계에서 가장 오래된 커피 및 홍차 전문점 프랜차이즈 중의 하나이다. 최초의 매장은 1963년에 로스앤젤레스의 브렌트우드에서 허버트 B. 하이만과 모나 하이만이 개점하였다. 현재 미국 남서부와 하와이주까지 아우르는 점포망을 갖고 있다. 동남아시아에는 1996년에 총판권을 구입한 싱가포르 출신의 사업가 빅터 새순이 “커피빈스”(Coffee Beans)라는 이름의 매장을 여러 곳에 개점하였다. 전 세계적으로는 현재 14여 개국, 400여 곳이 넘는 직영 및 프랜차이즈 매장을 갖고 있다.
+      커피빈은 커피뿐 아니라 여러 종류의 홍차 음료를 취급한다는 점에서 스타벅스 같은 다른 커피 전문 체인점과는 다르다. 또, 유명한 오리지널 아이스 블렌디드(Original Ice Blended)® 블렌드와 차이 라테도 취급한다.
+      2003년에는 매출 1억 2천만 달러(USD)를 기록하였다. 점포 중 144여 곳에서는 와이파이 접속을 지원한다. 미국 외에서는 주로 프랜차이즈 매장이, 미국 내에는 주로 회사 소유의 매장이 위치한다. 현재 진출 국가는 싱가포르, 이스라엘, 대한민국, 아랍 에미리트, 브루나이, 오스트레일리아, 인도네시아. 말레이시아, 필리핀, 쿠웨이트, 이집트이다.2019년 9월 필리핀의 식품기업 졸리비(Jollibee Foods)가 커피빈의 브랜드를 보유한 International Coffee & Tea, LLC를 인수했다.
+      `,
     },
   },
   {
@@ -506,8 +520,11 @@ const DummyBrandInfo = [
     brand_name: "Chilsung Cyder",
     brand_main_image: chilsung,
     brand_sub_image: "",
-    brand_link: "",
-    category: "커피&음료",
+    brand_link:
+      "https://company.lottechilsung.co.kr/kor/brand/chilsungcider/contentsid/613/index.do",
+    category: `칠성사이다(七星 cider)는 1950년 5월 9일에 출시된 청량음료다.최근 "칠성사이다 제로"가 새로 탄생했다
+    칠성사이다 출시 이전 1945년 해방 직후에는 서울사이다, 삼성사이다, 스타사이다 등의 대한민국 기업이 생산한 제품들이 경쟁적으로 만들어지기 시작하기도 했다.
+    `,
   },
   {
     _id: 69,

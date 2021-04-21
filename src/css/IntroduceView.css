@@ -1,212 +1,148 @@
-#introduce_view {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+/* !mobile first */
 
+#introduce_view {
+  width: var(--width-pers);
+  height: 102vh;
   background: var(--main-body-color);
-  height: 50vh;
+  padding-right: 24px !important;
+  padding-left: 24px !important;
+  border: 1px solid red;
 }
 
 .introduce_container {
-  display: flex;
-  flex-direction: row;
-  width: 60%;
-  height: 80%;
-  background: var(--main-btn-color);
-  border-radius: 50px;
-}
-
-.introduce_left {
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
-  flex: 1.5;
-}
-.introduce_left > h1 {
-  padding: 2%;
-  color: white;
-  font-size: 4rem;
+  border-radius: 8px;
+  background: var(--main-box-color);
+  border: 1px solid red;
 }
 
-.introduce_left > p {
-  padding-left: 5%;
-  color: white;
-  font-size: 1.3rem;
-}
-
-.introduce_left > button {
-  width: 45%;
-  height: 50px;
-  border-radius: 20px;
-  background: white;
-
-  font-size: 1.5rem;
-  font-weight: bolder;
-
-  box-shadow: 0px 1px 10px black;
-  margin: auto;
-}
-
-.introduce_left > button:hover {
-  transition: ease-in 0.2s;
-  background: rgb(207, 207, 207);
-}
-.introduce_right {
+.article_box {
+  /* border: 5px solid red; */
+  background: var(--main-box-color);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  width: 100%;
+  height: auto;
   display: flex;
-  flex: 1;
-  background-image: url("../images/brands.jpg");
-  border-top-right-radius: 50px;
-  border-bottom-right-radius: 50px;
-}
-@media all and (max-width: 1700px) {
-  .introduce_left > h1 {
-    padding: 2%;
-    color: white;
-    font-size: 4rem;
-    transition: ease-out 0.5s;
-  }
-
-  .introduce_left > p {
-    padding-left: 5%;
-    color: white;
-    font-size: 1.3rem;
-    transition: ease-out 0.5s;
-  }
-  .introduce_left > button {
-    width: 45%;
-    height: 50px;
-    border-radius: 20px;
-    background: white;
-
-    font-size: 1.1rem;
-    font-weight: bolder;
-
-    box-shadow: 0px 1px 10px black;
-    margin: auto;
-    transition: ease-out 1s;
-  }
-}
-@media all and (max-width: 1300px) {
-  .introduce_left > h1 {
-    padding: 2%;
-    color: white;
-    font-size: 4rem;
-    transition: ease-out 0.5s;
-  }
-
-  .introduce_left > p {
-    padding-left: 5%;
-    color: white;
-    font-size: 1.3rem;
-    transition: ease-out 0.5s;
-  }
-
-  .introduce_left > button {
-    width: 45%;
-    height: 50px;
-    border-radius: 20px;
-    background: white;
-
-    font-size: 1.1rem;
-    font-weight: bolder;
-
-    box-shadow: 0px 1px 10px black;
-    margin: auto;
-    transition: ease-out 1s;
-  }
-  @media all and (max-width: 1060px) {
-    .introduce_left > h1 {
-      padding: 2%;
-      color: white;
-      font-size: 3rem;
-      transition: ease-out 0.5s;
-    }
-
-    .introduce_left > p {
-      padding-left: 5%;
-      color: white;
-      font-size: 1rem;
-      transition: ease-out 0.5s;
-    }
-
-    .introduce_left > button {
-      width: 43%;
-      height: 50px;
-      border-radius: 20px;
-      background: white;
-
-      font-size: 1rem;
-      font-weight: bolder;
-
-      box-shadow: 0px 1px 10px black;
-      margin: auto;
-      transition: ease-out 1s;
-    }
-  }
+  flex-direction: column;
+  padding: 32px 32px 20px 32px;
+  align-items: center;
+  text-align: center;
 }
 
-@media all and (max-width: 950px) {
+.article_title {
+  color: white;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 600;
+}
+
+.article_subTitle {
+  padding: 7px;
+  color: white;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  white-space: pre-line !important;
+  font-weight: 400;
+}
+
+.article_btn {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  transition: ease-in 0.2s;
+  background: var(--main-btn-color);
+  width: 50%;
+  height: 40px;
+  border-radius: 8px;
+  margin: 50px 0px 10px 0px;
+  padding: 6px !important;
+  cursor: pointer !important;
+}
+.article_btn:hover {
+  background: rgb(255, 115, 0, 0.5);
+}
+
+.article_img_box {
+}
+
+.article_img_box > img {
+  width: 100%;
+  height: auto;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+/* 768p ~ 1023까지 적용, Tablet */
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  #introduce_view {
+    height: 47vh;
+    margin: 0px auto !important;
+    position: relative !important;
+    max-width: 1760px !important;
+    padding-right: 40px !important;
+    padding-left: 40px !important;
+  }
   .introduce_container {
-    display: inherit;
-    width: 100%;
-    border-radius: 0;
-    height: 100%;
-  }
-
-  .introduce_left {
-    padding: 10%;
+    height: 42vh;
     display: flex;
+    flex-direction: row;
   }
-  .introduce_left > h1 {
-    font-size: 5rem 100%;
-    color: black;
+  .article_box {
+    padding: 100px 32px 20px 32px;
+    height: 41vh;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
   }
-  .introduce_left > p {
-    font-size: 1rem 100%;
-    color: black;
-
-    font-weight: bold;
-  }
-  .introduce_right {
-    display: none;
-  }
-  .introduce_left > button {
-    width: 80%;
-
-    margin: auto;
-    transition: ease-out 1s;
+  .article_img_box > img {
+    height: 41vh;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 0px;
   }
 }
 
-@media all and (max-width: 400px) {
+/* 1024px 이상부터 적용 */
+@media all and (min-width: 1024px) {
+  #introduce_view {
+    height: 50vh;
+    margin: 0px auto !important;
+    position: relative !important;
+    max-width: 1760px !important;
+    padding-right: 80px !important;
+    padding-left: 80px !important;
+  }
   .introduce_container {
-    display: inherit;
-    width: 100%;
-    border-radius: 0;
-    height: 100%;
-  }
-
-  .introduce_left {
-    padding: 10%;
+    height: 43vh;
     display: flex;
+    flex-direction: row;
   }
-  .introduce_left > h1 {
+  .article_box {
+    vertical-align: middle;
+    height: 43vh;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    justify-content: center;
+  }
+  .article_img_box > img {
+    height: 43vh;
+    object-fit: cover;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 0px;
+  }
+  .article_title {
     font-size: 2rem;
-    color: black;
   }
-  .introduce_left > p {
-    font-size: 0.8rem;
-    color: black;
 
-    font-weight: bold;
+  .article_subTitle {
+    padding-top: 3%;
+    font-size: 1.1rem !important;
   }
-  .introduce_right {
-    display: none;
-  }
-  .introduce_left > button {
-    width: 90%;
 
-    margin: auto;
-    transition: ease-out 1s;
+  .article_btn {
+    font-size: 18px;
   }
 }

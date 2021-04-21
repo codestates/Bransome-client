@@ -1,77 +1,111 @@
-@import "~slick-carousel/slick/slick.css";
-@import "~slick-carousel/slick/slick-theme.css";
+/* !mobile first */
 
 #best_view_container {
-  display: flex;
-  flex-direction: column;
-  background: var(--sub-body-color);
   width: var(--width-pers);
   height: 50vh;
+  background: var(--main-body-color);
+  /* border: 1px solid red; */
 }
-.category-container {
-  width: 80%;
-  margin: 2% auto;
+.view_title {
+  padding: 20px 12px 16px 24px !important;
+  margin-bottom: 10px;
+  color: white;
+  font-size: 1.8em !important;
+  font-weight: 700;
+  line-height: 28px;
+}
+.category_container {
+  display: grid !important;
+  grid-auto-flow: column !important;
+  overflow: auto hidden !important;
+  scroll-snap-type: x mandatory !important;
+  scroll-snap-align: start;
+  gap: 12px !important;
+  padding: 4px 24px 8px;
+  scroll-padding: 0px 24px;
+}
+.category_container::-webkit-scrollbar {
+  display: none;
+}
+.category_container div > li {
+  width: 270px;
+  height: 270px;
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+  border-radius: 8px;
+  margin-right: 12px;
 }
 
-.slick-arrow {
-  z-index: 100;
-}
-
-.category_best_btn {
-  background: rgba(128, 128, 128, 0.267);
-  border-radius: 10px;
-  padding: 1%;
+.category_container div {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  text-align: center;
-  color: rgb(255, 255, 255);
-  font-weight: bold;
 }
 
-.category_image {
-  display: block;
-  margin: 0px auto;
-  padding: 2%;
-  border-radius: 15px;
-  height: 230px;
-  width: 100%;
+.category_container .all li:nth-child(1) {
+  background-image: url("../images/home_img/allbrand.jpg");
+}
+.category_container .cola li:nth-child(1) {
+  background-image: url("../images/home_img/cola.jpg");
+}
+.category_container .nike li:nth-child(1) {
+  background-image: url("../images/home_img/nike.jpg");
+}
+.category_container .tesla li:nth-child(1) {
+  background-image: url("../images/home_img/tesla.jpg");
 }
 
-@media all and (max-width: 1000px) {
-  .category-container {
-    width: 95%;
-    margin: 2% auto;
+.category_name {
+  padding-left: 5px;
+  margin-top: 2%;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  max-height: 44px;
+}
+
+/* 768p ~ 1023까지 적용, Tablet */
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  #best_view_container {
+    height: 52vh;
+  }
+  .category_container {
+    height: 40vh;
   }
 }
-@media all and (max-width: 1100px) {
-  .category-container {
-    width: 95%;
-    margin: 2% auto;
+
+/* 1024px 이상부터 적용 */
+@media all and (min-width: 1024px) {
+  #best_view_container {
+    height: 55vh;
+    margin: 0px auto !important;
+    position: relative !important;
+    max-width: 1760px !important;
+    padding-right: 80px !important;
+    padding-left: 80px !important;
   }
-}
-@media all and (max-width: 1200px) {
-  .category-container {
-    width: 95%;
-    margin: 2% auto;
+  .category_container {
+    height: 45vh;
+    padding: 0;
   }
-}
-@media all and (max-width: 1300px) {
-  .category-container {
-    width: 95%;
-    margin: 2% auto;
+  .category_container div > li {
+    width: 320px;
+    height: 320px;
   }
-}
-@media all and (max-width: 1400px) {
-  .category-container {
-    width: 95%;
-    margin: 2% auto;
+  .view_title {
+    padding: 20px 12px 16px 10px !important;
+    color: white;
+    font-size: 2.3em !important;
+    font-weight: 600;
+    line-height: 28px;
   }
-}
-@media all and (max-width: 1500px) {
-  .category-container {
-    width: 95%;
-    margin: 2% auto;
+  .category_name {
+    margin-top: 2%;
+    color: white;
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height: 22px;
+    max-height: 44px;
   }
 }

@@ -39,7 +39,7 @@
   justify-content: end;
   cursor: pointer;
   text-decoration: none;
-  margin-right: 40px;
+  margin-right: 20px;
 }
 
 .navbar_link_btn {
@@ -84,9 +84,6 @@
   padding: 8px 20px;
   transition: all 0.3s ease-out;
   transition: 250ms;
-}
-
-.btn__medium {
 }
 
 .modal_login_btn {
