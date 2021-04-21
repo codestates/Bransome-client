@@ -1,13 +1,20 @@
+import apple1976 from "../../images/apple1976.jpeg";
+
 const Introduce = () => {
   return (
     <section id="introduce_view">
       <div className="introduce_container">
-        <article className="introduce_left">
-          <h1>나만의 브랜드를 만나보세요</h1>
-          <p>새로운 영감과 인사이트를 얻고 나만의 브랜드를 만들어보세요.</p>
-          <button>자세히 알아보기</button>
-        </article>
-        <article className="introduce_right"></article>
+        <div className="article_box">
+          <span className="article_title">애플의 출발점은 어땠을까?</span>
+          <span className="article_subTitle">
+            새로운 영감과 인사이트를 얻고 브랜드의 가능성을 확인하세요.
+          </span>
+          <button className="article_btn">자세히 알아보기</button>
+        </div>
+
+        <div className="article_img_box">
+          <img src={apple1976} />
+        </div>
       </div>
     </section>
   );
