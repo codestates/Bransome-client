@@ -24,7 +24,7 @@ const CommentView = () => {
                     className="comments_profile_image"
                   />
                 </div>
-                <div>
+                <div className="comments_user_info">
                   <h2 className="comments_user">{data.user}</h2>
                   <h2 className="comments_age">{data.age}</h2>
                 </div>

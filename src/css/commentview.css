@@ -11,6 +11,7 @@
   width: 650px;
 }
 .view3_left_box > h3 {
+  word-break: keep-all;
   padding: 100px;
   font-size: 3.5rem;
   color: var(--main-text-color);
@@ -93,7 +94,9 @@
   width: 100px;
   height: 100px;
 }
-
+.comments_user_info {
+  padding: 0.5rem;
+}
 .comments_user,
 .comments_age {
   text-align: center;
