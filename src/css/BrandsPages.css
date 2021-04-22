@@ -3,24 +3,32 @@
   flex-direction: row;
   height: var(--height-vh);
   width: var(--width-pers);
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .brand_left_view {
-  display: flex;
+  display: inline-block;
+  margin-top: 2rem;
   flex-direction: column;
-  justify-content: flex-start;
   width: 30%;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
 }
 .brand_header > h2 {
+  text-align: start;
   padding: 5%;
-  font-size: 5rem;
+  /* margin-top: 50%; */
+  font-size: 2.3rem;
+  color: white;
 }
 
 .brand_search_box {
   display: flex;
   flex-direction: column;
-
-  align-items: center;
+  align-items: baseline;
+  width: 150%;
+  padding-left: 1rem;
 }
 
 .categories_container {
@@ -33,21 +41,22 @@
 .category_btn_box {
   display: flex;
   flex-direction: row;
-  padding: 5%;
-  justify-content: space-evenly;
+  padding: 4%;
+  /* justify-content: space-between; */
   flex-wrap: wrap;
 }
 
 .category_btn {
-  font-size: 1.2rem;
-
-  border-radius: 5px;
+  font-size: 1rem;
+  border-radius: 12px;
   background: var(--main-btn-color);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.315);
+  box-shadow: 0 1px 3px rgb(0 0 0 / 32%);
   padding: 1% 5%;
   text-align: center;
   font-weight: bold;
   color: white;
+  line-height: 2rem;
+  margin: 0.3rem;
 }
 
 .category_btn:active,
@@ -68,7 +77,8 @@
 }
 
 .brand_scroll_content {
-  width: 98%;
+  margin-top: 2rem;
+  width: 100%;
   height: var(--height-vh);
   background: var(--main-body-color);
 
@@ -79,12 +89,22 @@
   overflow-x: hidden;
   overflow-y: scroll;
 }
+.brand_scroll_content::-webkit-scrollbar-thumb {
+  background: rgb(255, 115, 0, 0.5);
+  opacity: 10%;
+  border-radius: 8px;
+  width: 10px;
+}
+.brand_scroll_content::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--main-body-color);
+}
 
 .brand_img_box {
   margin: 0.5%;
   height: 20%;
 
-  padding: 1%;
+  padding: 3%;
   border-radius: 5px;
 
   background: var(--sub-body-color);
@@ -133,8 +153,7 @@
   .category_btn {
     font-size: 1rem;
     margin: 1%;
-    border-radius: 5px;
-
+    border-radius: 12px;
     color: white;
   }
 
@@ -149,7 +168,7 @@
     }
 
     .brand_header > h2 {
-      font-size: 1.5rem;
+      font-size: 2rem;
       text-align: center;
       padding: 0.5%;
     }
@@ -166,11 +185,14 @@
       margin: 1%;
       height: 25%;
     }
+    .brand_scroll_content {
+      margin-top: 0rem;
+    }
 
     .category_btn {
       font-size: 1rem;
       margin: 1%;
-      border-radius: 5px;
+      border-radius: 12px;
 
       color: white;
     }
@@ -188,7 +210,7 @@
     }
 
     .brand_header > h2 {
-      font-size: 1.5rem;
+      font-size: 2rem;
       text-align: center;
       padding: 0.5%;
     }
@@ -227,7 +249,7 @@
     }
 
     .brand_header > h2 {
-      font-size: 2rem;
+      font-size: 2.5rem;
       text-align: center;
       padding: 0.5%;
     }
@@ -248,7 +270,7 @@
     .category_btn {
       font-size: 1rem;
       margin: 1%;
-      border-radius: 5px;
+      border-radius: 12px;
 
       color: white;
     }

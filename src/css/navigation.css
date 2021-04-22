@@ -5,7 +5,7 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  height: 70px;
+  height: 90px;
   background-color: transparent;
 }
 
@@ -23,11 +23,11 @@
 .navbar_logo {
   display: flex;
   align-items: center;
-  margin-left: 5%;
+  margin-left: 6%;
   cursor: progress;
 }
 #logos {
-  width: 130px;
+  width: 150px;
 }
 
 .nav_menu_box {
@@ -128,6 +128,7 @@
     margin-top: 3%;
   }
   .menu_icon {
+    margin-top: 0.6rem;
     display: block;
     position: absolute;
     top: 0;
@@ -199,6 +200,7 @@
     margin-top: 2%;
   }
   .menu_icon {
+    margin-top: 0.5rem;
     display: block;
     position: absolute;
     top: 0;

@@ -69,6 +69,8 @@
 @media all and (min-width: 768px) and (max-width: 1023px) {
   #best_view_container {
     height: 52vh;
+    padding-right: 81px !important;
+    padding-left: 32px !important;
   }
   .category_container {
     height: 40vh;
