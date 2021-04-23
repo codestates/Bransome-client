@@ -54,7 +54,7 @@ const Navigation = () => {
 
   const changeBackground = () => {
     //console.log(window.scrollY);
-    if (window.scrollY >= 150) {
+    if (window.scrollY >= 30) {
       setNavbar_box(true);
     } else {
       setNavbar_box(false);

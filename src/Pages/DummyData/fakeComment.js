@@ -1,4 +1,6 @@
-import person1 from "../../images/profile.jpg";
+import person1 from "../../images/comment_profile/girl.png";
+import person2 from "../../images/comment_profile/girl2.png";
+import person3 from "../../images/comment_profile/boy.png";
 
 let rand1 = Math.floor(Math.random() * 79) + 10;
 function getRandomArbitrary(min, max) {
@@ -20,7 +22,7 @@ const comments = [
   },
   {
     commentsTitle: "써보니 너무 좋은 것 같습니다.",
-    profileImg: person1,
+    profileImg: person2,
     user: "박해커",
     age: `${getRandomArbitrary()}세`,
     contents:
@@ -28,7 +30,7 @@ const comments = [
   },
   {
     commentsTitle: "써보니 너무 좋은 것 같습니다.",
-    profileImg: person1,
+    profileImg: person3,
     user: "최개발",
     age: `${getRandomArbitrary()}세`,
     contents:
@@ -44,7 +46,7 @@ const comments = [
   },
   {
     commentsTitle: "써보니 너무 좋은 것 같습니다.",
-    profileImg: person1,
+    profileImg: person2,
     user: "유쿠키",
     age: `${getRandomArbitrary()}세`,
     contents:
@@ -52,7 +54,7 @@ const comments = [
   },
   {
     commentsTitle: "써보니 너무 좋은 것 같습니다.",
-    profileImg: person1,
+    profileImg: person3,
     user: "허토큰",
     age: `${getRandomArbitrary()}세`,
     contents:
