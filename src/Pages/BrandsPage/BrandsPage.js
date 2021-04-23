@@ -1,5 +1,5 @@
 import React, { useState, Component, useEffect } from "react";
-
+import {} from "../../redux-Moduls/actions";
 import SearchBar from "../../components/SearchBar";
 import FooterContent from "../../components/FooterContent";
 
