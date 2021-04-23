@@ -38,10 +38,13 @@
 .github_btn,
 .google_btn,
 .apple_btn {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   filter: grayscale(100%);
   padding: 2%;
+  background: var(--main-box-color);
+  border-radius: 50%;
+  padding: 0.7rem;
 }
 
 @media all and (max-width: 1001px) and (max-height: 1400px) {

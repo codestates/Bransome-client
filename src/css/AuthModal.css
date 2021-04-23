@@ -11,6 +11,7 @@
 }
 
 .modal_container {
+  z-index: 9999;
   width: var(--width-pers);
   height: var(--height-vh);
 
