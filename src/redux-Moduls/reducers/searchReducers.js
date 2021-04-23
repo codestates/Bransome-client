@@ -1,20 +1,28 @@
-import { LOADING, SEARCH } from "../actions";
+import { act } from "react-dom/test-utils";
+import { LOADING, SEARCH_BRAND, FIND_BRAND } from "../actions";
 import initialState from "./initialState";
 
-const searchReducers = (state = initialState, action) => {
+export const searchChangeReducer = (state = initialState, action = {}) => {
   switch (action.type) {
-    case SEARCH: {
-      return { ...state, value: action.payload, loading: false };
-    }
-    case LOADING: {
+    case SEARCH_BRAND:
       return {
         ...state,
-        loading: true,
+        searchField: action.payload,
       };
-    }
     default:
       return state;
   }
 };
 
-export default searchReducers;
+export const fetchBrandsReducer = (state = initialState, action = {}) => {
+  switch (action.type) {
+    case FIND_BRAND:
+      return {
+        ...state,
+        brands: action.payload,
+        isLoading: false,
+      };
+    default:
+      return state;
+  }
+};

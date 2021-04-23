@@ -32,7 +32,7 @@ const BrandInfoDetails = ({ infoData }) => {
     <>
       <section className="info_box">
         <article className="info_btn_box">
-          <a href="/brand" className="Info_btn back_btn">
+          {/* <a href="/brand" className="Info_btn back_btn">
             뒤로가기
           </a>
 
@@ -53,7 +53,17 @@ const BrandInfoDetails = ({ infoData }) => {
             onClick={() => setActive(categoryList[2])}
           >
             인사이트
-          </button>
+          </button> */}
+          {categoryList.map((type) => (
+            <button
+              className="Info_btn"
+              key={type}
+              active={active === type}
+              onClick={() => setActive(type)}
+            >
+              {type}
+            </button>
+          ))}
         </article>
         <article className="info_btn_box2">
           <div className="views">15.8k</div>
@@ -78,7 +88,7 @@ const BrandInfoDetails = ({ infoData }) => {
           </div>
         </article>
       </section>
-      <section>
+      <section id="info_content_box">
         {active === "History" && <History historyData={infoData} />}
         {active === "Chart" && <Chart chartData={infoData} />}
         {active === "Insight" && <Insight insightData={infoData} />}

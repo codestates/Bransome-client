@@ -1,12 +1,14 @@
+import DummyBrandInfo from "../Pages/DummyData/DummyBrandInfo";
+
 /* type */
 
 export const ACTIONS = {};
-export const NEXT_SLIDE = "NEXT_SLIDE";
-export const PREV_SLIDE = "PREV_SLIDE";
-export const SEARCH = "SEARCH";
+// export const NEXT_SLIDE = "NEXT_SLIDE";
+// export const PREV_SLIDE = "PREV_SLIDE";
+export const SEARCH_BRAND = "SEARCH_BRAND";
+export const FIND_BRAND = "FIND_BRAND";
 export const LOADING = "LOADING";
-export const OPEN_MODAL = "OPEN_MODAL";
-export const CLOSE_MODAL = "CLOSE_MODAL";
+
 export const GOOGLE_OAUTH2 = "GOOGLE_OAUTH2";
 export const FETCH_BRANDS = "FETCH_BRANDS";
 export const FILTER_BRAND_BY_CATEGORY = "FILTER_BRAND_BY_CATEGORY";
@@ -23,14 +25,20 @@ export const DETAILS = "DETAILS";
 
 // export const actionCreators = { a, b };
 
-export const search = (value) => (dispatch) => {
+export const searchChangeAction = (values) => (dispatch) => {
   dispatch({
-    type: SEARCH,
-    payload: value,
+    type: SEARCH_BRAND,
+    payload: values,
+  });
+};
+export const fetchBrandsAction = () => (dispatch) => {
+  dispatch({
+    type: FIND_BRAND,
+    payload: DummyBrandInfo,
   });
 };
 
-export const setLoanding = () => {
+export const setLoading = () => {
   return {
     type: LOADING,
   };

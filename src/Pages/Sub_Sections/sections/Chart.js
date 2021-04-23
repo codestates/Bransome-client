@@ -1,8 +1,8 @@
 const ChartContent = ({ chartData }) => {
   return (
-    <section id="contents">
+    <article id="contents2">
       <div className="contents-box">Chart</div>
-    </section>
+    </article>
   );
 };
 

@@ -35,7 +35,7 @@ const BrandPages = (props) => {
             <h2>좋아하는 브랜드를 찾아보세요.</h2>
           </header>
           <div className="brand_search_box">
-            <SearchBar />
+            <SearchBar showBrand={showBrand} />
             {/* <input
             type="text"
             className="searchingBox"

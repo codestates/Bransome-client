@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 import React, { useState } from "react";
 
@@ -14,7 +14,10 @@ const BrandInfo = ({ showInfo, match }) => {
   return (
     <div id="brandinfo_container">
       <div className="brandinfo_contents_box">
-        <header className="brandInfo_header">{detailBrands.brand_name}</header>
+        <a href="/brand" className="back_btn">
+          뒤로가기
+        </a>
+
         <article className="brandInfo_logo">
           <a href={detailBrands.brand_link} target="_blank" rel="noreferrer">
             <img

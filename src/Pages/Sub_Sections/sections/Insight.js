@@ -2,7 +2,7 @@ import React from "react";
 
 const InsightContents = ({ insightData }) => {
   return (
-    <section id="contents">
+    <article id="contents">
       <div className="contents-box">
         <button className="contents_btn">공홈</button>
         <button className="contents_btn">관련 아티클</button>
@@ -10,7 +10,7 @@ const InsightContents = ({ insightData }) => {
         <button className="contents_btn">관련 이미지</button>
         <button className="contents_btn">관련 뉴스</button>
       </div>
-    </section>
+    </article>
   );
 };
 
