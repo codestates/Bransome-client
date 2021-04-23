@@ -3,8 +3,15 @@
 ***
 ## Info
 
+### Home
 
 ![main_resize](https://user-images.githubusercontent.com/68404212/115835161-f209ce80-a450-11eb-9c2e-5f3494bf5a0c.gif)
+
+
+### 필터링 검색 기능
+
+![brand_resize](https://user-images.githubusercontent.com/68404212/115838276-76aa1c00-a454-11eb-9503-f5b44097fec7.gif)
+
 
 ***
 ## Tech
