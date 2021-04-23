@@ -2,7 +2,7 @@ import React from "react";
 
 const HistoryContents = ({ historyData }) => {
   return (
-    <article id="contents">
+    <article id="contents1">
       <div className="contents-box">{historyData.contents.history}</div>
     </article>
   );

@@ -1,5 +1,5 @@
 import React, { useState, Component, useEffect } from "react";
-
+import {} from "../../redux-Moduls/actions";
 import SearchBar from "../../components/SearchBar";
 import FooterContent from "../../components/FooterContent";
 
@@ -35,7 +35,7 @@ const BrandPages = (props) => {
             <h2>좋아하는 브랜드를 찾아보세요.</h2>
           </header>
           <div className="brand_search_box">
-            <SearchBar />
+            <SearchBar showBrand={showBrand} />
             {/* <input
             type="text"
             className="searchingBox"
