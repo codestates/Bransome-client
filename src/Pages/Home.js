@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import Aos from "aos";
 
 import WelcomeView from "./Main_Sections/WelcomeView";
+import Animation from "../components/Animation";
 import StoryView from "./Main_Sections/StoryView";
 import CommentView from "./Main_Sections/CommentView";
 import FooterContent from "../components/FooterContent";
@@ -23,6 +24,7 @@ const Home = () => {
   return (
     <section className="home_container">
       <WelcomeView />
+      <Animation />
       <BrandCategoryView />
       <Introduce />
       <CommentView />
