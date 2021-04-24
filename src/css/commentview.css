@@ -129,10 +129,12 @@
     transition: linear 0.5s;
   }
   .view3_left_box {
+    margin-top: 20px;
     width: 100%;
     padding: 15%;
   }
   .comments_container {
+    margin-top: 20px;
     margin: 0%;
   }
   .view3_right {

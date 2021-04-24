@@ -1,4 +1,5 @@
 .navbar_box {
+  padding-left: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,7 +24,6 @@
 .navbar_logo {
   display: flex;
   align-items: center;
-  margin-left: 6%;
   cursor: progress;
 }
 #logos {
@@ -105,6 +105,11 @@
     transition: linear 1s;
   }
   */
+  .navbar_box {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
   .nav_menu_box {
     display: flex;
     flex-direction: column;
@@ -177,6 +182,10 @@
     transition: linear 1s;
   }
   */
+  .navbar_box {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
   .nav_menu_box {
     display: flex;
     flex-direction: column;

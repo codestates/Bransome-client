@@ -1,4 +1,5 @@
 import apple1976 from "../../images/apple1976.jpeg";
+import { Link } from "react-router-dom";
 
 const Introduce = () => {
   return (
@@ -9,7 +10,10 @@ const Introduce = () => {
           <span className="article_subTitle">
             새로운 영감과 인사이트를 얻고 브랜드의 가능성을 확인하세요.
           </span>
-          <button className="article_btn">자세히 알아보기</button>
+          <Link to="/brandInfo/1">
+            {" "}
+            <button className="article_btn">자세히 알아보기</button>{" "}
+          </Link>
         </div>
 
         <div className="article_img_box">

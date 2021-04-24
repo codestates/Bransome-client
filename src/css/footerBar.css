@@ -1,7 +1,9 @@
 #footer_container {
+  padding-left: 80px;
+  padding-right: 80px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 20vh;
   width: 100%;
   font-size: 1.3em;
@@ -27,7 +29,7 @@
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  padding: 40px 80px;
+  padding: 15px 40px;
 
   margin-left: 0 auto;
 }
@@ -56,7 +58,8 @@
     padding-top: 5rem;
   }
   .footer_btn_box {
-    padding: 0 20px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
   .footer_text_area {
     padding-top: 3%;
@@ -79,8 +82,8 @@
   .github_btn,
   .google_btn,
   .apple_btn {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     filter: grayscale(100%);
   }
 
@@ -121,7 +124,8 @@
       flex-direction: column;
     }
     .footer_btn_box {
-      padding: 0 20px;
+      padding-left: 40px;
+      padding-right: 40px;
     }
     .footer_text_area {
       padding-top: 5%;
@@ -139,8 +143,8 @@
     .github_btn,
     .google_btn,
     .apple_btn {
-      width: 30px;
-      height: 30px;
+      width: 50px;
+      height: 50px;
       filter: grayscale(100%);
     }
   }
