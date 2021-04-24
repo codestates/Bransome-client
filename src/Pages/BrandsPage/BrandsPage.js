@@ -1,5 +1,5 @@
 import React, { useState, Component, useEffect } from "react";
-import {} from "../../redux-Moduls/actions";
+import { se } from "../../redux-Moduls/actions";
 import SearchBar from "../../components/SearchBar";
 import FooterContent from "../../components/FooterContent";
 
@@ -7,10 +7,12 @@ import BrandScreen from "./BrandScreen";
 import CategoryBtn from "./CategoryBtn";
 import { connect } from "react-redux";
 
-const BrandPages = (props) => {
+const BrandPages = ({ showInfo }) => {
   const [showBrand, setShowBrand] = useState([]);
   const [categoriesBtn, setCategoriesBtn] = useState("All");
-
+  const [loading, setLoading] = useState(false);
+  const [search, setSearch] = useState("");
+  const [filterBrands, setFilterBrands] = useState([]);
   // const filterBrand = () => {
   //   if (categoriesBtn === "All") {
   //     setShowBrand(brands);
@@ -22,11 +24,17 @@ const BrandPages = (props) => {
 
   useEffect(() => {
     categoriesBtn === "All"
-      ? setShowBrand(brands)
-      : setShowBrand(brands.filter((br) => br.category === categoriesBtn));
+      ? setShowBrand(showInfo)
+      : setShowBrand(showInfo.filter((br) => br.category === categoriesBtn));
   }, [categoriesBtn]);
 
-  const { brands } = props.showInfo;
+  useEffect(() => {
+    setFilterBrands(
+      showBrand.filter((b) =>
+        b.brand_name.toLowerCase().includes(search.toLowerCase()),
+      ),
+    );
+  }, [search, showBrand]);
   return (
     <>
       <div id="brands_view">
@@ -35,47 +43,19 @@ const BrandPages = (props) => {
             <h2>좋아하는 브랜드를 찾아보세요.</h2>
           </header>
           <div className="brand_search_box">
-            <SearchBar showBrand={showBrand} />
+            <SearchBar onChange={(e) => setSearch(e.target.value)} />
             {/* <input
             type="text"
             className="searchingBox"
             placeholder="검색어를 입력하세요"
           ></input>
           <img className="glass" src={search} /> */}
+            {/* <input
+              type="text"
+              placeholder="브랜드를 검색해봐"
+              onChange={(e) => setSearch(e.target.value)}
+            ></input> */}
           </div>
-          {/* <Router>
-            <div className="brand_categories">
-              <Link to={`${match.url}/All`} className="brand_category">
-                <span className="categories_btn All">전체</span>
-              </Link>
-              <Link to={`${match.url}/restaurant`} className="brand_category">
-                <span className="categories_btn restaurant">
-                  카페/프렌차이즈
-                </span>
-              </Link>
-              <Link to={`${match.url}/eletronics`} className="brand_category">
-                <span className="categories_btn eletronics">전자기기</span>
-              </Link>
-              <Link to={`${match.url}/media`} className="brand_category">
-                <span className="categories_btn media">IT/미디어</span>
-              </Link>
-              <Link to={`${match.url}/automobile`} className="brand_category">
-                <span className="categories_btn automobile">자동차</span>
-              </Link>
-            </div>
-          </Router> */}
-          {/* {filterBrand.map((name, idx) => {
-            return (
-              <>
-                <CategoryBtn
-                  key={idx}
-                  name={name.category}
-                  tagActive={categoriesBtn === name.category ? true : false}
-                  handleSetTag={setCategoriesBtn}
-                />
-              </>
-            );
-          })} */}
 
           <article className="category_btn_box">
             <CategoryBtn
@@ -104,7 +84,13 @@ const BrandPages = (props) => {
           {/* {brands.map((br, idx) => (
             <BrandScreen key={br._id} brandData={br} />
           ))} */}
-          <BrandScreen showBrand={showBrand} />
+          {/* <BrandScreen showBrand={showBrand} /> */}
+          <div className="brand_scroll_content">
+            {filterBrands.map((brand, idx) => (
+              // console.log(brand),
+              <BrandScreen key={idx} {...brand} />
+            ))}
+          </div>
         </div>
       </div>
       <FooterContent />
@@ -113,7 +99,7 @@ const BrandPages = (props) => {
 };
 
 const mapStateToProps = (state) => ({
-  showInfo: state.showInfo,
+  showInfo: state.showInfo.brands,
 });
 
 export default connect(mapStateToProps)(BrandPages);

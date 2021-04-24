@@ -1,27 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const BrandScreen = ({ showBrand }) => {
+const BrandScreen = ({ _id, brand_main_image }) => {
   return (
-    <div className="brand_scroll_content">
+    <React.Fragment>
       {/* <Link to={`/brandinfo/${brandData._id}`}>
         <img className="brand_img" src={brandData.brand_main_image}></img>
       </Link> */}
-
-      <React.Fragment>
-        {showBrand.map((item, idx) => {
-          return (
-            <Link
-              key={idx}
-              className="brand_img_box"
-              to={`/brandInfo/${item._id}`}
-            >
-              <img className="brand_img" src={item.brand_main_image} />
-            </Link>
-          );
-        })}
-      </React.Fragment>
-    </div>
+      <Link className="brand_img_box" to={`/brandInfo/${_id}`}>
+        <img className="brand_img" src={brand_main_image} />
+      </Link>
+    </React.Fragment>
   );
 };
 
