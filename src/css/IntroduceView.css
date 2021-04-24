@@ -2,7 +2,7 @@
 
 #introduce_view {
   width: var(--width-pers);
-  height: 102vh;
+  height: 100vh;
   background: var(--main-body-color);
   padding-right: 24px !important;
   padding-left: 24px !important;
@@ -78,7 +78,7 @@
 /* 768p ~ 1023까지 적용, Tablet */
 @media all and (min-width: 768px) and (max-width: 1023px) {
   #introduce_view {
-    height: 47vh;
+    height: 100%;
     margin: 0px auto !important;
     position: relative !important;
     max-width: 1760px !important;
@@ -86,13 +86,12 @@
     padding-left: 40px !important;
   }
   .introduce_container {
-    height: 42vh;
+    height: 70%;
     display: flex;
     flex-direction: row;
   }
   .article_box {
     padding: 70px 32px 20px 32px;
-    height: 41vh;
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
   }
@@ -116,7 +115,7 @@
     line-height: 1.5rem !important;
   }
   .article_img_box > img {
-    height: 41vh;
+    height: 100%;
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
     border-bottom-left-radius: 0px;
@@ -126,7 +125,7 @@
 /* 1024px 이상부터 적용 */
 @media all and (min-width: 1024px) {
   #introduce_view {
-    height: 50vh;
+    height: 100%;
     margin: 0px auto !important;
     position: relative !important;
     max-width: 1760px !important;
@@ -134,19 +133,18 @@
     padding-left: 80px !important;
   }
   .introduce_container {
-    height: 43vh;
+    height: 70%;
     display: flex;
     flex-direction: row;
+    margin-top: 65px;
   }
   .article_box {
     vertical-align: middle;
-    height: 43vh;
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
     justify-content: center;
   }
   .article_img_box > img {
-    height: 43vh;
     object-fit: cover;
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;

@@ -2,10 +2,6 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import CategoryCarousel from "../../components/CategoryCarousel";
 import CategoryMenu from "../../components/CategoryMenu";
-import allBrand from "../../images/home_img/allbrand.jpg";
-import cola from "../../images/home_img/cola.jpg";
-import nike from "../../images/home_img/nike.jpg";
-import tesla from "../../images/home_img/tesla.jpg";
 
 const BrandCategoryView = () => {
   const [screen, setScreen] = useState();
@@ -29,22 +25,30 @@ const BrandCategoryView = () => {
       </header>
       <article>
         <ul className="category_container">
-          <div className="all">
-            <li></li>
-            <span className="category_name">브랜드 전체</span>
-          </div>
-          <div className="cola">
-            <li></li>
-            <span className="category_name">커피 / 음료</span>
-          </div>
-          <div className="nike">
-            <li></li>
-            <span className="category_name">스포츠</span>
-          </div>
-          <div className="tesla">
-            <li></li>
-            <span className="category_name">자동차</span>
-          </div>
+          <Link to="/brand/All">
+            <div className="all">
+              <li></li>
+              <span className="category_name">브랜드 전체</span>
+            </div>
+          </Link>
+          <Link to="/brand/커피&음료">
+            <div className="cola">
+              <li></li>
+              <span className="category_name">커피 / 음료</span>
+            </div>
+          </Link>
+          <Link to="/brand/IT&미디어">
+            <div className="netflix">
+              <li></li>
+              <span className="category_name">IT / 미디어</span>
+            </div>
+          </Link>
+          <Link to="/brand/자동차">
+            <div className="tesla">
+              <li></li>
+              <span className="category_name">자동차</span>
+            </div>
+          </Link>
         </ul>
       </article>
     </section>

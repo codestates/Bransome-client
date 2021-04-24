@@ -4,7 +4,6 @@ import { faUser, faBars } from "@fortawesome/free-solid-svg-icons";
 const CommentView = () => {
   return (
     <section className="home_view_container3">
-      <video src="/videos/video-5.mp4" autoPlay loop muted className="video" />
       <aside className="view3_left">
         <div className="view3_left_box">
           <h3 data-aos="fade-right" className="left_title">
