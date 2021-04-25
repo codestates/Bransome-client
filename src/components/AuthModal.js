@@ -1,14 +1,30 @@
-import { useRef, useCallback, useEffect } from "react";
+import { useRef, useCallback, useEffect, useState } from "react";
 import { useSpring, animated } from "react-spring";
 import { GLogin, GLogout } from "./auth/GoogleLogin";
 import { KLogin } from "./auth/KakaoLogin";
 import { resolveConfig } from "prettier";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
-
+import modal_background from "../images/home_img/modal_background.jpg";
+import modal_logo from "../logos/bransome.png";
 const LoginState = ({ login, setLogin }) => {};
 
 const AuthModal = ({ show, setShow }) => {
+  const [modal, setModal] = useState(false);
+  const showModal = () => {
+    if (window.innerWidth <= 850) {
+      setModal(false);
+    } else {
+      setModal(true);
+    }
+  };
+
+  // useEffect(() => {
+  //   showModal();
+  // }, []);
+
+  window.addEventListener("resize", showModal);
+
   const modalRef = useRef();
 
   const animations = useSpring({
@@ -42,12 +58,21 @@ const AuthModal = ({ show, setShow }) => {
   return (
     <>
       {show ? (
-        <div className="modal_container" onClick={closeModal} ref={modalRef}>
+        <div
+          className={modal ? "modal_container active" : "modal_container"}
+          onClick={closeModal}
+          ref={modalRef}
+        >
           <animated.div style={animations}>
             <section className="modal_item" show={show} data-aos="zoom-in">
-              <article className="modal_main_image"></article>
+              <article className="modal_main_image">
+                <div className="modal_main_title">Think Bransome.</div>
+                <img src={modal_background} />
+              </article>
               <article className="modal_contents">
-                <div className="login_title">Welcome to Bransome</div>
+                <div className="login_title">
+                  <img src={modal_logo} className="modal_logo" />
+                </div>
                 {/* {isLogin ? 
                 <div>
                   <button>마이페이지<button>
