@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { NavLink as Link } from "react-router-dom";
 import "../css/AuthModal.css";
 import MainLogo from "../logos/기본 로고-003.png";
-import { openModal, closeModal } from "../redux-Moduls/actions";
+
 import AuthModal from "./AuthModal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faBars } from "@fortawesome/free-solid-svg-icons";

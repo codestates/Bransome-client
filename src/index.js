@@ -17,7 +17,7 @@ import "./css/IntroduceView.css";
 import "./css/BrandsPages.css";
 import "./css/best20.css";
 import "./css/BrandInfo.css";
-
+import "./css/bestIntPage.css";
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
