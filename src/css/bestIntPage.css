@@ -1,0 +1,24 @@
+#bestInt_container {
+  height: 30vh;
+  width: var(--width-vw);
+  display: flex;
+  justify-content: center;
+}
+
+.best_box {
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.best_box > h2 {
+  color: white;
+}
+.best_box > img {
+  width: 1000px;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  z-index: -10000;
+}

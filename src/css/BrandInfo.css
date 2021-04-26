@@ -148,8 +148,9 @@
   background-color: var(--main-text-color);
 }
 
-#contents {
-  padding: 5%;
+#info_content_box {
+  padding: 3%;
+  width: 100%;
 }
 
 .views,
@@ -162,9 +163,12 @@
 }
 
 .contents-box {
+  height: 0vh;
+}
+
+.history_box {
   overflow-y: scroll;
   color: rgb(207, 207, 207);
-  height: 40vh;
 }
 
 @media all and (max-width: 1030px) and (max-height: 1400px) {

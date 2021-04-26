@@ -3,7 +3,9 @@ import React from "react";
 const HistoryContents = ({ historyData }) => {
   return (
     <article id="contents1">
-      <div className="contents-box">{historyData.contents.history}</div>
+      <div className="contents-box history_box">
+        {historyData.contents.history}
+      </div>
     </article>
   );
 };

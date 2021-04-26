@@ -1,9 +1,10 @@
 import { NavLink as Link } from "react-router-dom";
 import React, { useState, Component, useEffect } from "react";
 import { connect } from "react-redux";
-import CategoryBtn from "./CategoryBtn";
-import BrandRanking from "./BrandRanking";
+import CategoryBtn from "./section/CategoryBtn";
+import BrandRanking from "./section/BrandRanking";
 import FooterContent from "../../components/FooterContent";
+
 const Best20 = ({ showInfo }) => {
   const [brandRanking, setBrandRanKing] = useState([]);
   const [bestCategoryBtn, setBestCategoryBtn] = useState("All");
@@ -19,9 +20,6 @@ const Best20 = ({ showInfo }) => {
   return (
     <>
       <div id="best_container">
-        {/* <header>
-          <h2>Best20</h2>
-        </header> */}
         <section className="best_title_wrap">
           <CategoryBtn
             name="All"
