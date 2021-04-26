@@ -19,9 +19,9 @@ const Best20 = ({ showInfo }) => {
   return (
     <>
       <div id="best_container">
-        <header>
+        {/* <header>
           <h2>Best20</h2>
-        </header>
+        </header> */}
         <section className="best_title_wrap">
           <CategoryBtn
             name="All"
@@ -46,6 +46,7 @@ const Best20 = ({ showInfo }) => {
         </section>
         <section className="best_rankings_wrap">
           <ul className="best_view best10">
+            <p>TOP 1~10</p>
             {brandRanking.map((ranking, idx) => {
               if (idx < 10) {
                 return <BrandRanking key={idx} {...ranking} />;
@@ -53,6 +54,7 @@ const Best20 = ({ showInfo }) => {
             })}
           </ul>
           <ul className="best_view best20">
+            <p>TOP 11~20</p>
             {brandRanking.map((ranking, idx) => {
               if (idx > 9 && idx < 20) {
                 return <BrandRanking key={idx} {...ranking} />;

@@ -14,9 +14,9 @@ const BrandInfo = ({ showInfo, match }) => {
   return (
     <div id="brandinfo_container">
       <div className="brandinfo_contents_box">
-        <a href="/brand" className="back_btn">
-          뒤로가기
-        </a>
+        <Link to="/brand" className="back_btn_location">
+          <button className="back_btn">뒤로가기</button>
+        </Link>
 
         <article className="brandInfo_logo">
           <a href={detailBrands.brand_link} target="_blank" rel="noreferrer">

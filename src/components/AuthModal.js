@@ -27,13 +27,13 @@ const AuthModal = ({ show, setShow }) => {
 
   const modalRef = useRef();
 
-  const animations = useSpring({
-    config: {
-      duration: 700,
-    },
-    opacity: show ? 1 : 0,
-    trasnform: show ? `translateY(0%)` : `translateY(-100%)`,
-  });
+  // const animations = useSpring({
+  //   config: {
+  //     duration: 700,
+  //   },
+  //   opacity: show ? 1 : 0,
+  //   trasnform: show ? `translateY(0%)` : `translateY(-100%)`,
+  // });
 
   const closeModal = (e) => {
     if (modalRef.current === e.target) {
@@ -63,36 +63,34 @@ const AuthModal = ({ show, setShow }) => {
           onClick={closeModal}
           ref={modalRef}
         >
-          <animated.div style={animations}>
-            <section className="modal_item" show={show} data-aos="zoom-in">
-              <article className="modal_main_image">
-                <div className="modal_main_title">Think Bransome.</div>
-                <img src={modal_background} />
-              </article>
-              <article className="modal_contents">
-                <div className="login_title">
-                  <img src={modal_logo} className="modal_logo" />
-                </div>
-                {/* {isLogin ? 
+          <section className="modal_item" show={show} data-aos="zoom-in">
+            <article className="modal_main_image">
+              <div className="modal_main_title">Think Bransome.</div>
+              <img src={modal_background} />
+            </article>
+            <article className="modal_contents">
+              <div className="login_title">
+                <img src={modal_logo} className="modal_logo" />
+              </div>
+              {/* {isLogin ? 
                 <div>
                   <button>마이페이지<button>
                     <Logout />
                   <div> : <Login />} */}
-                <GLogin />
-                <KLogin />
-                <div className="login_text">
-                  SNS계정으로 간편하게 로그인하세요.
-                </div>
-              </article>
-              <button
-                className="modal_close_btn"
-                aria-label="Close modal"
-                onClick={() => setShow((open) => !open)}
-              >
-                <FontAwesomeIcon className="esc_btn_svg" icon={faTimes} />
-              </button>
-            </section>
-          </animated.div>
+              <GLogin />
+              <KLogin />
+              <div className="login_text">
+                SNS계정으로 간편하게 로그인하세요.
+              </div>
+            </article>
+            <button
+              className="modal_close_btn"
+              aria-label="Close modal"
+              onClick={() => setShow((open) => !open)}
+            >
+              <FontAwesomeIcon className="esc_btn_svg" icon={faTimes} />
+            </button>
+          </section>
         </div>
       ) : null}
     </>

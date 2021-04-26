@@ -8,18 +8,42 @@ import HP from "../../logos/brandLogo-big/it/Hp.png";
 import Lenovo from "../../logos/brandLogo-big/it/lenovo.png";
 import Samsung from "../../logos/brandLogo-big/it/samsung.png";
 import LG from "../../logos/brandLogo-big/it/lg.png";
-
+import facebook from "../../logos/brandLogo-big/it/facebook.svg";
+import oracle from "../../logos/brandLogo-big/it/oracle.svg";
+import ibm from "../../logos/brandLogo-big/it/ibm.svg";
+import cisco from "../../logos/brandLogo-big/it/cisco.svg";
+import seagate from "../../logos/brandLogo-big/it/seagate.svg";
+import hynix from "../../logos/brandLogo-big/it/sk-hynix.svg";
+import qualcomm from "../../logos/brandLogo-big/it/qualcomm.svg";
+import google from "../../logos/brandLogo-big/it/google.svg";
+import htc from "../../logos/brandLogo-big/it/htc.svg";
+import tsmc from "../../logos/brandLogo-big/it/tsmc.svg";
+import nokia from "../../logos/brandLogo-big/it/nokia-3.svg";
+import sony from "../../logos/brandLogo-big/it/sony.svg";
 /*IT 랭킹 로고 */
 import apple2 from "../../logos/brandLogo-small/it/apple.png";
 import microsoft2 from "../../logos/brandLogo-small/it/microsoft.png";
 import intel2 from "../../logos/brandLogo-small/it/intel.png";
-// import AMD2 from "../../logos/brandLogo-small/it/Amd.png";
+import AMD2 from "../../logos/brandLogo-small/it/amd.png";
 import Nvidia2 from "../../logos/brandLogo-small/it/nvidia.png";
-// import Dell2 from "../../logos/brandLogo-small/it/Dell.png";
+import Dell2 from "../../logos/brandLogo-small/it/dell.png";
 import HP2 from "../../logos/brandLogo-small/it/hp.png";
-// import Lenovo2 from "../../logos/brandLogo-small/it/lenovo.png";
+import Lenovo2 from "../../logos/brandLogo-small/it/lenovo.png";
 import Samsung2 from "../../logos/brandLogo-small/it/samsung.png";
 import LG2 from "../../logos/brandLogo-small/it/lg.png";
+
+import facebook2 from "../../logos/brandLogo-small/it/facebook.png";
+import oracle2 from "../../logos/brandLogo-small/it/oracle.png";
+import ibm2 from "../../logos/brandLogo-small/it/ibm.png";
+import cisco2 from "../../logos/brandLogo-small/it/cisco.png";
+import seagate2 from "../../logos/brandLogo-small/it/seagate.png";
+import hynix2 from "../../logos/brandLogo-small/it/sk-hynix.png";
+import qualcomm2 from "../../logos/brandLogo-small/it/qualcomm.png";
+import google2 from "../../logos/brandLogo-small/it/google.png";
+import htc2 from "../../logos/brandLogo-small/it/htc.png";
+import tsmc2 from "../../logos/brandLogo-small/it/tsmc.png";
+import nokia2 from "../../logos/brandLogo-small/it/nokia.png";
+import sony2 from "../../logos/brandLogo-small/it/sony.png";
 /*음료수 브랜드 로고*/
 import cocacola from "../../logos/brandLogo-big/drink/cocacola.png";
 import ediya from "../../logos/brandLogo-big/drink/idiya.jpg";
@@ -130,6 +154,17 @@ import {
   LNV,
   SAM,
   LGs,
+  FB,
+  IBM,
+  CIS,
+  GGL,
+  ORC,
+  SNY,
+  NKA,
+  SKH,
+  SG,
+  QQ,
+  HTC,
 } from "./CompanyInfo/ItInfo";
 
 import {
@@ -182,7 +217,7 @@ import {
   LADA,
   SCN,
 } from "./CompanyInfo/CarInfo";
-import "./importImage";
+
 /*
 IT/미디어: 1~50
 자동차: 51~100
@@ -196,7 +231,7 @@ const brandInfoData = [
     brand_id: 1,
     brand_name: "Apple",
     brand_main_image: apple,
-    brand_sub_image: "",
+    brand_sub_image: apple2,
     brand_link: "https://www.apple.com/kr/",
     category: "IT&미디어",
     contents: {
@@ -208,7 +243,7 @@ const brandInfoData = [
     brand_id: 2,
     brand_name: "Microsoft",
     brand_main_image: microsoft,
-    brand_sub_image: "../../logos/brandLogo-small/4.ms.png",
+    brand_sub_image: microsoft2,
     brand_link: "https://www.microsoft.com/ko-kr",
     category: "IT&미디어",
     contents: {
@@ -220,7 +255,7 @@ const brandInfoData = [
     brand_id: 3,
     brand_name: "Intel",
     brand_main_image: intel,
-    brand_sub_image: "",
+    brand_sub_image: intel2,
     brand_link: "https://www.intel.co.kr/content/www/kr/ko/homepage.html",
     category: "IT&미디어",
     contents: {
@@ -234,7 +269,7 @@ const brandInfoData = [
     brand_id: 4,
     brand_name: "AMD",
     brand_main_image: AMD,
-    brand_sub_image: "",
+    brand_sub_image: AMD2,
     brand_link: "https://www.amd.com/ko",
     category: "IT&미디어",
     contents: {
@@ -246,7 +281,7 @@ const brandInfoData = [
     brand_id: 5,
     brand_name: "Nvidia",
     brand_main_image: Nvidia,
-    brand_sub_image: "",
+    brand_sub_image: Nvidia2,
     brand_link: "https://www.nvidia.com/ko-kr/",
     category: "IT&미디어",
     contents: {
@@ -258,7 +293,7 @@ const brandInfoData = [
     brand_id: 6,
     brand_name: "Dell",
     brand_main_image: Dell,
-    brand_sub_image: "",
+    brand_sub_image: Dell2,
     brand_link: "https://www.dell.com/ko-kr",
     category: "IT&미디어",
     contents: {
@@ -270,7 +305,7 @@ const brandInfoData = [
     brand_id: 7,
     brand_name: "HP",
     brand_main_image: HP,
-    brand_sub_image: "",
+    brand_sub_image: HP2,
     brand_link: "https://www8.hp.com/kr/ko/home.html",
     category: "IT&미디어",
     contents: {
@@ -282,7 +317,7 @@ const brandInfoData = [
     brand_id: 8,
     brand_name: "Lenovo",
     brand_main_image: Lenovo,
-    brand_sub_image: "",
+    brand_sub_image: Lenovo2,
     brand_link: "https://www.lenovo.com/kr/ko/",
     category: "IT&미디어",
     contents: {
@@ -294,7 +329,7 @@ const brandInfoData = [
     brand_id: 9,
     brand_name: "Samsung",
     brand_main_image: Samsung,
-    brand_sub_image: "",
+    brand_sub_image: Samsung2,
     brand_link: "https://www.samsung.com/sec/",
     category: "IT&미디어",
     contents: {
@@ -306,7 +341,151 @@ const brandInfoData = [
     brand_id: 10,
     brand_name: "LG",
     brand_main_image: LG,
-    brand_sub_image: "",
+    brand_sub_image: LG2,
+    brand_link: "https://www.lge.co.kr/lgekor/main.do",
+    category: "IT&미디어",
+    contents: {
+      history: LGs,
+    },
+  },
+  {
+    _id: 11,
+    brand_id: 11,
+    brand_name: "IBM",
+    brand_main_image: ibm,
+    brand_sub_image: ibm2,
+    brand_link: "https://www.lge.co.kr/lgekor/main.do",
+    category: "IT&미디어",
+    contents: {
+      history: IBM,
+    },
+  },
+  {
+    _id: 12,
+    brand_id: 12,
+    brand_name: "SONY",
+    brand_main_image: sony,
+    brand_sub_image: sony2,
+    brand_link: "https://www.lge.co.kr/lgekor/main.do",
+    category: "IT&미디어",
+    contents: {
+      history: SNY,
+    },
+  },
+  {
+    _id: 13,
+    brand_id: 13,
+    brand_name: "ORACLE",
+    brand_main_image: oracle,
+    brand_sub_image: oracle2,
+    brand_link: "https://www.lge.co.kr/lgekor/main.do",
+    category: "IT&미디어",
+    contents: {
+      history: ORC,
+    },
+  },
+  {
+    _id: 14,
+    brand_id: 14,
+    brand_name: "NOKIA",
+    brand_main_image: nokia,
+    brand_sub_image: nokia2,
+    brand_link: "https://www.lge.co.kr/lgekor/main.do",
+    category: "IT&미디어",
+    contents: {
+      history: NKA,
+    },
+  },
+  {
+    _id: 15,
+    brand_id: 15,
+    brand_name: "SK Hynix",
+    brand_main_image: hynix,
+    brand_sub_image: hynix2,
+    brand_link: "https://www.lge.co.kr/lgekor/main.do",
+    category: "IT&미디어",
+    contents: {
+      history: SKH,
+    },
+  },
+  {
+    _id: 16,
+    brand_id: 16,
+    brand_name: "Seagate",
+    brand_main_image: seagate,
+    brand_sub_image: seagate2,
+    brand_link: "https://www.lge.co.kr/lgekor/main.do",
+    category: "IT&미디어",
+    contents: {
+      history: SG,
+    },
+  },
+  {
+    _id: 17,
+    brand_id: 17,
+    brand_name: "Qualcomm",
+    brand_main_image: qualcomm,
+    brand_sub_image: qualcomm2,
+    brand_link: "https://www.lge.co.kr/lgekor/main.do",
+    category: "IT&미디어",
+    contents: {
+      history: QQ,
+    },
+  },
+  {
+    _id: 18,
+    brand_id: 18,
+    brand_name: "Facebook",
+    brand_main_image: facebook,
+    brand_sub_image: facebook2,
+    brand_link: "https://www.lge.co.kr/lgekor/main.do",
+    category: "IT&미디어",
+    contents: {
+      history: FB,
+    },
+  },
+  {
+    _id: 19,
+    brand_id: 19,
+    brand_name: "Cisco",
+    brand_main_image: cisco,
+    brand_sub_image: cisco2,
+    brand_link: "https://www.lge.co.kr/lgekor/main.do",
+    category: "IT&미디어",
+    contents: {
+      history: CIS,
+    },
+  },
+  {
+    _id: 20,
+    brand_id: 20,
+    brand_name: "GOOGLE",
+    brand_main_image: google,
+    brand_sub_image: google2,
+    brand_link: "https://www.lge.co.kr/lgekor/main.do",
+    category: "IT&미디어",
+    contents: {
+      history: GGL,
+    },
+  },
+  {
+    _id: 21,
+    brand_id: 21,
+    brand_name: "HTC",
+    brand_main_image: htc,
+    brand_sub_image: htc2,
+    brand_link: "https://www.lge.co.kr/lgekor/main.do",
+    category: "IT&미디어",
+    contents: {
+      history: HTC,
+    },
+  },
+  {
+    _id: 22,
+    brand_id: 22,
+    brand_name: "TSMC",
+    brand_main_image: tsmc,
+    brand_sub_image: tsmc2,
     brand_link: "https://www.lge.co.kr/lgekor/main.do",
     category: "IT&미디어",
     contents: {
