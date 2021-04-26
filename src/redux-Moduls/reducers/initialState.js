@@ -1,4 +1,4 @@
-import brandData from "../../Pages/DummyData/DummyBrandInfo";
+import brandData from "../../Pages/DummyData/brandInfoData";
 const initialState = {
   brands: brandData,
   text: "",

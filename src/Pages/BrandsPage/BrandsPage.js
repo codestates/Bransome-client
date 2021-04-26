@@ -1,5 +1,5 @@
 import React, { useState, Component, useEffect } from "react";
-import { se } from "../../redux-Moduls/actions";
+
 import SearchBar from "../../components/SearchBar";
 import FooterContent from "../../components/FooterContent";
 
@@ -13,14 +13,6 @@ const BrandPages = ({ showInfo }) => {
   const [loading, setLoading] = useState(false);
   const [search, setSearch] = useState("");
   const [filterBrands, setFilterBrands] = useState([]);
-  // const filterBrand = () => {
-  //   if (categoriesBtn === "All") {
-  //     setShowBrand(brands);
-  //     return;
-  //   }
-  //   const filteredBrand = brands.filter((b) => b.category === categoriesBtn);
-  //   setShowBrand(filteredBrand);
-  // };
 
   useEffect(() => {
     categoriesBtn === "All"
@@ -44,17 +36,6 @@ const BrandPages = ({ showInfo }) => {
           </header>
           <div className="brand_search_box">
             <SearchBar onChange={(e) => setSearch(e.target.value)} />
-            {/* <input
-            type="text"
-            className="searchingBox"
-            placeholder="검색어를 입력하세요"
-          ></input>
-          <img className="glass" src={search} /> */}
-            {/* <input
-              type="text"
-              placeholder="브랜드를 검색해봐"
-              onChange={(e) => setSearch(e.target.value)}
-            ></input> */}
           </div>
 
           <article className="category_btn_box">
@@ -81,10 +62,6 @@ const BrandPages = ({ showInfo }) => {
           </article>
         </div>
         <div className="brand_right_view">
-          {/* {brands.map((br, idx) => (
-            <BrandScreen key={br._id} brandData={br} />
-          ))} */}
-          {/* <BrandScreen showBrand={showBrand} /> */}
           <div className="brand_scroll_content">
             {filterBrands.map((brand, idx) => (
               // console.log(brand),
