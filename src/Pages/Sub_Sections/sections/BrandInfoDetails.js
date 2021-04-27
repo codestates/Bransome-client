@@ -32,6 +32,11 @@ const BrandInfoDetails = ({ infoData }) => {
     <>
       <section className="info_box">
         <article className="info_btn_box">
+          <div className="back_box">
+            <a href="/brand" className="back_btn">
+              뒤로가기
+            </a>
+          </div>
           {/* <a href="/brand" className="Info_btn back_btn">
             뒤로가기
           </a>

@@ -34,7 +34,7 @@
   width: 100%;
 
   padding: 2%;
-  margin-top: 3%;
+  margin-top: 10%;
   border-radius: 5px;
 
   box-shadow: 0 3px 10px black;
@@ -120,9 +120,11 @@
 }
 
 .Info_btn:hover {
-  background: var(--main);
+  background: rgb(255, 115, 0, 0.8);
 }
-
+.back_box {
+  margin-right: 0.4rem;
+}
 .back_btn_location {
   position: relative;
   top: 10%;
@@ -171,6 +173,7 @@
   color: rgb(207, 207, 207);
 }
 
+/* 
 @media all and (max-width: 1030px) and (max-height: 1400px) {
   .contents-box {
     height: 30vh;
@@ -197,4 +200,4 @@
       height: 50vh;
     }
   }
-}
+} */

@@ -2,7 +2,7 @@
 
 #best_view_container {
   width: var(--width-pers);
-  height: 50vh;
+  height: 100vh;
   background: var(--main-body-color);
   /* border: 1px solid red; */
 }

@@ -1,6 +1,6 @@
 .home_view_container1 {
   margin-top: -70px;
-  height: 86vh;
+  height: 88vh;
   width: 100%;
   background-color: var(--main-body-color);
   display: flex;
@@ -19,7 +19,7 @@
 }
 
 .view_1 > h1 {
-  margin-top: 25%;
+  margin-top: 35%;
   font-size: 4rem;
   margin-bottom: -3%;
 }
