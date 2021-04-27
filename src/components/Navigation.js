@@ -26,7 +26,7 @@ const Navigation = () => {
   };
 
   const manageState = () => {
-    setOpen((show) => !show);
+    setOpen(!open);
   };
   const menuItems = [
     {
@@ -99,7 +99,7 @@ const Navigation = () => {
                 로그인
               </button>
             )} */}
-          <button className="modal_login_btn" onClick={manageState}>
+          <button className="modal_login_btn" onClick={() => manageState()}>
             로그인
           </button>
           <AuthModal show={open} setShow={setOpen} />
