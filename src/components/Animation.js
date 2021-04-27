@@ -16,6 +16,7 @@ const Animation = () => {
   }
 
   useEffect(() => {
+    //"scroll" 호출할 키값, 뒤에 onScroll은 사용될 함수.
     window.addEventListener("scroll", onScroll);
     return () => {
       window.removeEventListener("scroll", onScroll);
