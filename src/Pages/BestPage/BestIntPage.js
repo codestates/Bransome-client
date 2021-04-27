@@ -1,4 +1,4 @@
-import wds from "../../images/brandRanking.png";
+import wds from "../../images/worldDesign.jpg";
 
 const BestIntPage = () => {
   return (

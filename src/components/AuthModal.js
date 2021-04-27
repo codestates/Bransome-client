@@ -10,30 +10,7 @@ import modal_logo from "../logos/bransome.png";
 const LoginState = ({ login, setLogin }) => {};
 
 const AuthModal = ({ show, setShow }) => {
-  const [modal, setModal] = useState(false);
-  const showModal = () => {
-    if (window.innerWidth <= 850) {
-      setModal(false);
-    } else {
-      setModal(true);
-    }
-  };
-
-  // useEffect(() => {
-  //   showModal();
-  // }, []);
-
-  window.addEventListener("resize", showModal);
-
   const modalRef = useRef();
-
-  // const animations = useSpring({
-  //   config: {
-  //     duration: 700,
-  //   },
-  //   opacity: show ? 1 : 0,
-  //   trasnform: show ? `translateY(0%)` : `translateY(-100%)`,
-  // });
 
   const closeModal = (e) => {
     if (modalRef.current === e.target) {
@@ -50,20 +27,20 @@ const AuthModal = ({ show, setShow }) => {
     [setShow, show],
   );
 
-  useEffect(() => {
-    document.addEventListener("keydown", keyPress);
-    return () => document.addEventListener("keydown", keyPress);
-  }, [keyPress]);
+  // useEffect(() => {
+  //   document.addEventListener("keydown", keyPress);
+  //   return () => document.addEventListener("keydown", keyPress);
+  // }, [keyPress]);
 
   return (
     <>
       {show ? (
         <div
-          className={modal ? "modal_container active" : "modal_container"}
+          className={show ? "modal_container active" : "modal_container"}
           onClick={closeModal}
           ref={modalRef}
         >
-          <section className="modal_item" show={show} data-aos="zoom-in">
+          <section className="modal_item" data-aos="zoom-in">
             <article className="modal_main_image">
               <div className="modal_main_title">Think Bransome.</div>
               <img src={modal_background} />
