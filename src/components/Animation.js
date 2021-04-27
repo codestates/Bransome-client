@@ -33,19 +33,19 @@ const Animation = () => {
               transform: `translateX(${position / 3}px)`,
             }}
           >
-            Inspired
+            Inspired.
             <div className="logo">
               <img src={airbnb} />
             </div>
-            Branding
+            Branding.
             <div className="logo">
               <img src={spotify} />
             </div>
-            Inspired
+            Inspired.
             <div className="logo">
               <img src={netflix} />
             </div>
-            Branding
+            Branding.
           </div>
 
           <div
@@ -54,19 +54,18 @@ const Animation = () => {
               transform: `translateX(${-position / 5}px)`,
             }}
           >
-            Google
             <div className="logo">
               <img src={google} />
             </div>
-            Apple
+            Google.
             <div className="logo">
               <img src={apple} />
             </div>
-            Mcdonald
+            Apple.
             <div className="logo">
               <img src={mcdonald} className="mc" />
             </div>
-            Amazon
+            Mcdonald. Amazon.
           </div>
         </div>
       </div>

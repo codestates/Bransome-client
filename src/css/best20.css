@@ -1,6 +1,6 @@
 #best_container {
   width: 100vw;
-  height: 7 0vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,34 +8,71 @@
 
 .best_rankings_wrap {
   display: flex;
-  width: 100%;
-  justify-content: center;
+  width: 50%;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
+.best_title_wrap {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  /* border-bottom: px solid var(--main-btn-color); */
+}
 .best_view {
-  margin: 5%;
+  margin-top: 3%;
+  background-color: var(--main-box-color);
+
+  padding: 5%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.best_view > p {
+  border-bottom: 3px solid var(--main-btn-color);
+  font-size: larger;
+  color: white;
+  font-weight: bold;
 }
 .category_btn2 {
-  width: 200px;
-  height: 45px;
+  width: 150px;
+  height: 30px;
+  color: white;
+  background: inherit;
+  display: inline-block;
+  line-height: 1rem;
+  box-shadow: inset 0 0 0 0 white;
+  transition: ease-out 0.3s;
+  font-size: 1.5rem;
+  margin: 0 5%;
 }
-.categoryActive2 {
+.category_btn2:hover {
+  box-shadow: inset 300px 0 0 0 white;
+  color: black;
+}
+.category_btn2:hover::after {
+  width: 100%;
+  transition: width 0.3s;
 }
 
 .brand_ranking {
   display: flex;
 
-  background-color: var(--sub-body-color);
+  background-color: white;
   border-radius: 4px;
 
-  margin-top: 3%;
+  margin-top: 5%;
   align-items: center;
 
   width: 300px;
-  height: 60px;
+  height: 50px;
+}
+
+.brand_ranking:hover {
+  opacity: 0.8;
 }
 
 .brand_ranking_name {
-  text-align: right;
-  font-weight: bold;
+  text-align: center;
+  font-size: 1.2rem;
 }

@@ -2,7 +2,7 @@ import React from "react";
 
 const InsightContents = ({ insightData }) => {
   return (
-    <article id="contents a">
+    <article id="contents3">
       <div className="contents-box">
         <button className="contents_btn">공홈</button>
         <button className="contents_btn">관련 아티클</button>

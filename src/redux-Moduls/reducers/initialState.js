@@ -5,7 +5,7 @@ const initialState = {
   brandSearch: [],
   loading: false,
   brand: [],
-  openModalScreen: false,
+  modals: false,
 };
 
 export default initialState;

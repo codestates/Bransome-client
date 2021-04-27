@@ -15,7 +15,7 @@ const CommentView = () => {
       <aside className="view3_right">
         <ul className="comments_container">
           {comments.map((data, idx) => (
-            <li key={idx} id="comments_list">
+            <article key={idx} id="comments_list">
               <article className="comments_left">
                 <div className="comments_profile_image_box">
                   <img
@@ -32,7 +32,7 @@ const CommentView = () => {
                 <h2 className="comments_title">{data.commentsTitle}</h2>
                 <p className="comments_contents">{data.contents}</p>
               </article>
-            </li>
+            </article>
           ))}
         </ul>
       </aside>
