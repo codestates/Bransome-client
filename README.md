@@ -3,7 +3,7 @@
 ***
 
 ## Info
-
+브랜썸 노션 공식 문서 : https://bit.ly/3GjrkSu
 ### Home
 
 ![main_resize](https://user-images.githubusercontent.com/68404212/115835161-f209ce80-a450-11eb-9c2e-5f3494bf5a0c.gif)
